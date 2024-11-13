@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import getServerStats from "./getServerStats"
 
 const serverRouter = express.Router();
