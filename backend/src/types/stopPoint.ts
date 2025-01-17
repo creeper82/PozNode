@@ -1,4 +1,4 @@
 export default interface StopPoint {
-    symbol: String;
-    name: String;
+    symbol: string;
+    name: string;
 }

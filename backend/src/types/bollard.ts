@@ -1,6 +1,6 @@
 export default interface Bollard {
-    symbol: String;
-    tag: String;
-    name: String;
+    symbol: string;
+    tag: string;
+    name: string;
     mainBollard: Boolean;
 }

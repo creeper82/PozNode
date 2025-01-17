@@ -1,5 +1,5 @@
 export default interface Direction {
     returnVariant: Boolean;
-    direction: String;
-    lineName: String;
+    direction: string;
+    lineName: string;
 }

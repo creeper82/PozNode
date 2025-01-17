@@ -2,11 +2,11 @@ export default interface Departure {
     realTime: Boolean;
     driversTicketMachine?: Boolean;
     minutes: Number;
-    direction: String;
+    direction: string;
     lowFloorBus?: Boolean;
     onStopPoint: Boolean;
-    departure: String;
-    line: String;
+    departure: string;
+    line: string;
     lowEntranceBus?: Boolean;
     ticketMachine?: Boolean;
 }
