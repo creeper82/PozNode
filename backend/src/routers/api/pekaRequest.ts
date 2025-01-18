@@ -18,5 +18,5 @@ export default async function pekaRequest<ResultType>(method: string, params: Ob
 
     if ("success" in json) return json.success;
     if ("failure" in json) throw Error("External server error occured! " + json.failure);
-    throw Error("Received empty response. Method possibly doesn't exist.");
+    throw Error("Received empty response. Method possibly doesn't exist, or the server is down.");
 }

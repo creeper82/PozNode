@@ -9,7 +9,7 @@ export default async function handleGet(req: Request, res: Response) {
         res.json(r);
     }
 
-    catch (e) {
-        res.status(500).send(e);
+    catch (e: any) {
+        res.status(500).send(e.message || "Unrecognized error occured. No message provided.");
     }
 }
