@@ -1,3 +1,4 @@
+import Announcement from "../../../../types/announcement";
 import { NodeStopsResponse, NodeBollardsResponse, NodeDeparturesResponse, PekaGetStopPointsResponse, PekaGetBollardsResponse, PekaGetTimesResponse } from "../../../../types/responses";
 import ApiInterface from "../ApiInterface";
 import { convertBollardsResponse, convertDeparturesResponse, convertStopsResponse } from "./converters";
@@ -16,7 +17,21 @@ class PekaApiInterface implements ApiInterface {
 
     async getDepartures(symbol: string): Promise<NodeDeparturesResponse> {
         const result = await pekaRequest<PekaGetTimesResponse>("getTimes", { symbol: symbol });
-        return convertDeparturesResponse(result);
+        const converted = convertDeparturesResponse(result);
+
+        converted.announcements = await this.getAnnouncements(symbol).catch(() => []);
+
+        return converted;
+    }
+
+    async getAnnouncements(symbol: string): Promise<Announcement[]> {
+        const result = await pekaRequest<Announcement[]>("findMessagesForBollard", { symbol: symbol });
+
+        return result.map(announcement => ({
+            content: announcement.content,
+            startDate: announcement.startDate.substring(0, 10),
+            endDate: announcement.endDate.substring(0, 10)
+        }));
     }
 }
 

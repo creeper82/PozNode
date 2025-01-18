@@ -13,6 +13,6 @@ export type PekaGetLinesResponse = { name: string; }[];
 export type PekaFindMessagesResponse = Announcement[];
 export type PekaGetBollardsByLineResponse = { directions: DirectionWithBollards[]; };
 
-export type NodeDeparturesResponse = { bollardName: string; bollardSymbol: string; departures: Departure[]; };
+export type NodeDeparturesResponse = { bollardName: string; bollardSymbol: string; announcements: Announcement[]; departures: Departure[]; };
 export type NodeStopsResponse = { symbol: string; name: string; }[];
 export type NodeBollardsResponse = { name: string; symbol: string; directions: Direction[]; }[];

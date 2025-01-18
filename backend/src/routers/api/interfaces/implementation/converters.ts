@@ -24,6 +24,7 @@ export function convertDeparturesResponse(pekaResponse: PekaGetTimesResponse): N
     return {
         bollardName: pekaResponse.bollard.name,
         bollardSymbol: pekaResponse.bollard.symbol,
+        announcements: [],
         departures: pekaResponse.times
     };
 }
