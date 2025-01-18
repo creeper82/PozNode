@@ -1,11 +1,11 @@
 import { Request, Response } from "express";
-import getStopPoints from "./getStopPoints";
+import pekaApiInterface from "../interfaces/implementation/PekaApiInterface";
 
 export default async function handleGet(req: Request, res: Response) {
     const query = req.query.q ?? "";
 
     try {
-        const r = await getStopPoints(query.toString());
+        const r = await pekaApiInterface.getStops(query.toString());
         res.json(r);
     }
 

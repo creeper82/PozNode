@@ -1,9 +1,5 @@
 import { Request, Response } from "express";
-import getDepartures from "./getDepartures";
-
-function convertTimestamp(fullTimestamp: string): string {
-    return fullTimestamp.slice(fullTimestamp.indexOf("T") + 1, fullTimestamp.indexOf(":00"));
-}
+import pekaApiInterface from "../interfaces/implementation/PekaApiInterface";
 
 export default async function handleGet(req: Request, res: Response) {
     const query = req.query.bollard_symbol;
@@ -14,17 +10,8 @@ export default async function handleGet(req: Request, res: Response) {
     }
 
     try {
-        const r = await getDepartures(query.toString());
-
-        r.times.forEach(time => {
-            time.departure = convertTimestamp(time.departure);
-        });
-
-        res.json({
-            bollardName: r.bollard.name,
-            bollardSymbol: r.bollard.symbol,
-            departures: r.times
-        });
+        const r = await pekaApiInterface.getDepartures(query.toString());
+        res.json(r);
     }
 
     catch (e: any) {
