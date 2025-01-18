@@ -1,7 +1,7 @@
 import Announcement from "../../../../types/announcement";
-import { NodeStopsResponse, NodeBollardsResponse, NodeDeparturesResponse, PekaGetStopPointsResponse, PekaGetBollardsResponse, PekaGetTimesResponse, PekaGetLinesResponse } from "../../../../types/responses";
+import { NodeStopsResponse, NodeBollardsResponse, NodeDeparturesResponse, PekaGetStopPointsResponse, PekaGetBollardsResponse, PekaGetTimesResponse, PekaGetLinesResponse, NodeLineStopsResponse, PekaGetBollardsByLineResponse } from "../../../../types/responses";
 import ApiInterface from "../ApiInterface";
-import { convertBollardsResponse, convertDeparturesResponse, convertLinesResponse, convertStopsResponse } from "./converters";
+import { convertBollardsResponse, convertDeparturesResponse, convertLinesResponse, convertLineStopsResponse, convertStopsResponse } from "./converters";
 import pekaRequest from "./pekaRequest";
 
 /** Implementation of the interface, used to retrieve information from the PEKA Virtual Monitor API. */
@@ -19,6 +19,11 @@ class PekaApiInterface implements ApiInterface {
     async getLines(keyword: string): Promise<string[]> {
         const result = await pekaRequest<PekaGetLinesResponse>("getLines", { pattern: keyword });
         return convertLinesResponse(result);
+    }
+
+    async getLine(line: string): Promise<NodeLineStopsResponse> {
+        const result = await pekaRequest<PekaGetBollardsByLineResponse>("getBollardsByLine", { name: line });
+        return convertLineStopsResponse(result);
     }
 
     async getDepartures(symbol: string): Promise<NodeDeparturesResponse> {

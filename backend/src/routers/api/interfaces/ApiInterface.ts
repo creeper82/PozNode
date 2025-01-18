@@ -1,4 +1,4 @@
-import { NodeBollardsResponse, NodeDeparturesResponse, NodeStopsResponse } from "../../../types/responses";
+import { NodeBollardsResponse, NodeDeparturesResponse, NodeLineStopsResponse, NodeStopsResponse } from "../../../types/responses";
 
 /** Represents a general set of methods used to fetch data from the API. */
 export default interface ApiInterface {
@@ -6,4 +6,5 @@ export default interface ApiInterface {
     getBollards(name: string): Promise<NodeBollardsResponse>;
     getDepartures(symbol: string): Promise<NodeDeparturesResponse>;
     getLines(keyword: string): Promise<string[]>;
+    getLine(line: string): Promise<NodeLineStopsResponse>;
 }
