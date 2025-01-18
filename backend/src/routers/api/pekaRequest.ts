@@ -1,7 +1,4 @@
-import FailureResponse from "../../types/failureResponse";
-import SuccessResponse from "../../types/successResponse";
-
-export default async function pekaRequest(method: string, params: Object): Promise<SuccessResponse<any> | FailureResponse> {
+export default async function pekaRequest<ResultType>(method: string, params: Object): Promise<ResultType> {
     const url = "https://www.peka.poznan.pl/vm/method.vm";
     const headers = {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -17,5 +14,9 @@ export default async function pekaRequest(method: string, params: Object): Promi
         body: body
     });
 
-    return r.json();
+    const json = await r.json();
+
+    if ("success" in json) return json.success;
+    if ("failure" in json) throw Error("External server error occured! " + json.failure);
+    throw Error("Received empty response. Method possibly doesn't exist.");
 }

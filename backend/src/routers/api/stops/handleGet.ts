@@ -9,7 +9,7 @@ export default async function handleGet(req: Request, res: Response) {
         res.json(r);
     }
 
-    catch {
-        res.status(500).send("The request failed on the server side.");
+    catch (e) {
+        res.status(500).send(e);
     }
 }
