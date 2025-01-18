@@ -4,6 +4,7 @@ import ApiInterface from "../ApiInterface";
 import { convertBollardsResponse, convertDeparturesResponse, convertLinesResponse, convertStopsResponse } from "./converters";
 import pekaRequest from "./pekaRequest";
 
+/** Implementation of the interface, used to retrieve information from the PEKA Virtual Monitor API. */
 class PekaApiInterface implements ApiInterface {
     async getStops(keyword: string): Promise<NodeStopsResponse> {
         const result = await pekaRequest<PekaGetStopPointsResponse>("getStopPoints", { pattern: keyword });

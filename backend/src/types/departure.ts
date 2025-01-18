@@ -1,3 +1,4 @@
+/** Contains information about upcoming departure of a vehicle, and possibly about the vehicle itself. */
 export default interface Departure {
     realTime: Boolean;
     minutes: Number;
