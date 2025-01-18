@@ -1,4 +1,4 @@
-import Announcement from "../../../../types/announcement";
+import Announcement from "../../../../types/peka/announcement";
 import { NodeStopsResponse, NodeBollardsResponse, NodeDeparturesResponse, PekaGetStopPointsResponse, PekaGetBollardsResponse, PekaGetTimesResponse, PekaGetLinesResponse, NodeLineStopsResponse, PekaGetBollardsByLineResponse } from "../../../../types/responses";
 import ApiInterface from "../ApiInterface";
 import { convertBollardsResponse, convertDeparturesResponse, convertLinesResponse, convertLineStopsResponse, convertStopsResponse } from "./converters";
