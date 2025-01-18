@@ -1,7 +1,7 @@
 import Announcement from "../../../../types/announcement";
-import { NodeStopsResponse, NodeBollardsResponse, NodeDeparturesResponse, PekaGetStopPointsResponse, PekaGetBollardsResponse, PekaGetTimesResponse } from "../../../../types/responses";
+import { NodeStopsResponse, NodeBollardsResponse, NodeDeparturesResponse, PekaGetStopPointsResponse, PekaGetBollardsResponse, PekaGetTimesResponse, PekaGetLinesResponse } from "../../../../types/responses";
 import ApiInterface from "../ApiInterface";
-import { convertBollardsResponse, convertDeparturesResponse, convertStopsResponse } from "./converters";
+import { convertBollardsResponse, convertDeparturesResponse, convertLinesResponse, convertStopsResponse } from "./converters";
 import pekaRequest from "./pekaRequest";
 
 class PekaApiInterface implements ApiInterface {
@@ -13,6 +13,11 @@ class PekaApiInterface implements ApiInterface {
     async getBollards(name: string): Promise<NodeBollardsResponse> {
         const result = await pekaRequest<PekaGetBollardsResponse>("getBollardsByStopPoint", { name: name });
         return convertBollardsResponse(result);
+    }
+
+    async getLines(keyword: string): Promise<string[]> {
+        const result = await pekaRequest<PekaGetLinesResponse>("getLines", { pattern: keyword });
+        return convertLinesResponse(result);
     }
 
     async getDepartures(symbol: string): Promise<NodeDeparturesResponse> {

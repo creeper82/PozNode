@@ -1,4 +1,4 @@
-import { NodeBollardsResponse, NodeDeparturesResponse, NodeStopsResponse, PekaGetBollardsResponse, PekaGetStopPointsResponse, PekaGetTimesResponse } from "../../../../types/responses";
+import { NodeBollardsResponse, NodeDeparturesResponse, NodeStopsResponse, PekaGetBollardsResponse, PekaGetLinesResponse, PekaGetStopPointsResponse, PekaGetTimesResponse } from "../../../../types/responses";
 
 export function convertStopsResponse(pekaResponse: PekaGetStopPointsResponse): NodeStopsResponse {
     return pekaResponse;
@@ -27,6 +27,10 @@ export function convertDeparturesResponse(pekaResponse: PekaGetTimesResponse): N
         announcements: [],
         departures: pekaResponse.times
     };
+}
+
+export function convertLinesResponse(pekaResponse: PekaGetLinesResponse) : string[] {
+    return pekaResponse.map(line => line.name);
 }
 
 function convertTimestamp(fullTimestamp: string): string {
