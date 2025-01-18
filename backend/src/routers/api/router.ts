@@ -1,9 +1,9 @@
 import express from "express";
-import handleGetStops from "./stops/handleGet";
-import handleGetBollards from "./bollards/handleGet";
-import handleGetDepartures from "./departures/handleGet";
-import handleGetLines from "./lines/handleGet";
-import handleGetLine from "./line/handleGet";
+import handleGetStops from "./endpoints/stops/handleGet";
+import handleGetBollards from "./endpoints/bollards/handleGet";
+import handleGetDepartures from "./endpoints/departures/handleGet";
+import handleGetLines from "./endpoints/lines/handleGet";
+import handleGetLine from "./endpoints/line/handleGet";
 
 const apiRouter = express.Router();
 

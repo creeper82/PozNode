@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import pekaApiInterface from "../interfaces/implementation/PekaApiInterface";
+import pekaApiInterface from "../../interfaces/implementation/PekaApiInterface";
 
 export default async function handleGet(req: Request, res: Response) {
     const query = req.query.bollard_symbol;
