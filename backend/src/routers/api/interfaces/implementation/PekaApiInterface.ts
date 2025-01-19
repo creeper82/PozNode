@@ -62,9 +62,14 @@ class PekaApiInterface implements ApiInterface {
         }
     }
 
-    async getDepartures(symbol: string): Promise<NodeDeparturesResponse> {
+    async getDepartures(symbol: string, lineNumbers?: string[]): Promise<NodeDeparturesResponse> {
         try {
-            const result = await pekaRequest<PekaGetTimesResponse>("getTimes", { symbol: symbol });
+            let result = await pekaRequest<PekaGetTimesResponse>("getTimes", { symbol: symbol });
+
+            if (lineNumbers) {
+                result.times = result.times.filter(departure => lineNumbers.includes(departure.line));
+            }
+
             const converted = convertDeparturesResponse(result);
 
             converted.announcements = await this.getAnnouncements(symbol).catch(() => []);
