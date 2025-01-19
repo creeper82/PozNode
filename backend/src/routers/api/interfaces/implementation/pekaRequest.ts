@@ -20,6 +20,6 @@ export default async function pekaRequest<ResultType>(method: string, params: Ob
     const json = await r.json();
 
     if ("success" in json) return json.success;
-    if ("failure" in json) throw new PekaFailure(json.failure);
+    if ("failure" in json) throw new PekaFailure("PEKA server responded with failure: " + json.failure);
     throw new PekaEmptyResponse("Received empty response. Method possibly doesn't exist, or the server is down.");
 }

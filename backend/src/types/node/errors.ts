@@ -11,3 +11,10 @@ export class ExternalServerError extends Error {
         this.name = "ExternalServerError";
     }
 }
+
+export class MissingParameterError extends Error {
+    constructor(message: string) {
+        super(message);
+        this.name = "MissingArgumentError";
+    }
+}

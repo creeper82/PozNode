@@ -4,6 +4,7 @@ import handleGetBollards from "./endpoints/bollards/handleGet";
 import handleGetDepartures from "./endpoints/departures/handleGet";
 import handleGetLines from "./endpoints/lines/handleGet";
 import handleGetLine from "./endpoints/line/handleGet";
+import { errorHandler } from "./middleware/errorHandler";
 
 const apiRouter = express.Router();
 
@@ -12,5 +13,7 @@ apiRouter.get("/bollards", handleGetBollards);
 apiRouter.get("/departures", handleGetDepartures);
 apiRouter.get("/lines", handleGetLines);
 apiRouter.get("/line", handleGetLine);
+
+apiRouter.use(errorHandler);
 
 export default apiRouter;
