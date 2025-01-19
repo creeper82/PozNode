@@ -72,10 +72,10 @@ class PekaApiInterface implements ApiInterface {
             return converted;
         }
         catch (e: any) {
-            if (e instanceof PekaFailure && e.message == "brak") {
+            if (e instanceof PekaFailure && e.message.includes("brak")) {
                 throw new ResourceNotFoundError(`Bollard ${symbol} does not exist.`);
             }
-            else if (e instanceof PekaFailure) {
+            else if (e instanceof PekaFailure || e instanceof PekaEmptyResponse) {
                 throw new ExternalServerError(e.message);
             }
             else throw e;
