@@ -1,9 +1,9 @@
 import { NodeBollardOrdered } from "./node/bollardOrdered";
+import { NodeDirection } from "./node/direction";
 import Announcement from "./peka/announcement";
 import BollardWithDepartures from "./peka/bollardWithDepartures";
 import BollardWithDirections from "./peka/bollardWithDirections";
 import Departure from "./peka/departure";
-import Direction from "./peka/direction";
 import DirectionWithBollards from "./peka/directionWithBollards";
 import StopPoint from "./peka/stopPoint";
 
@@ -16,5 +16,5 @@ export type PekaGetBollardsByLineResponse = { directions: DirectionWithBollards[
 
 export type NodeDeparturesResponse = { bollardName: string; bollardSymbol: string; announcements: Announcement[]; departures: Departure[]; };
 export type NodeStopsResponse = { symbol: string; name: string; }[];
-export type NodeBollardsResponse = { name: string; symbol: string; directions: Direction[]; }[];
+export type NodeBollardsResponse = { name: string; symbol: string; directions: NodeDirection[]; }[];
 export type NodeLineStopsResponse = { direction: string; bollards: NodeBollardOrdered[]; }[];

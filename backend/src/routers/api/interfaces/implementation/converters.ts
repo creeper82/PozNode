@@ -10,7 +10,10 @@ export function convertBollardsResponse(pekaResponse: PekaGetBollardsResponse): 
             name: entry.bollard.name,
             // There is some mistake in the API - symbol and tag seems to be swapped?
             symbol: entry.bollard.tag,
-            directions: entry.directions
+            directions: entry.directions.map(direction => ({
+                lineName: direction.lineName,
+                direction: direction.direction
+            }))
         })));
     }
     else return [];
