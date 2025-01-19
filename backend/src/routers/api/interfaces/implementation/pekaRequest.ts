@@ -1,4 +1,4 @@
-import { PekaFailure } from "../../../../types/peka/errors";
+import { PekaEmptyResponse, PekaFailure } from "../../../../types/peka/errors";
 
 /** Sends a request to the PEKA Virtual Monitor API. If successful, returns the content inside the `success` property. Otherwise, throws an error. */
 export default async function pekaRequest<ResultType>(method: string, params: Object): Promise<ResultType> {
@@ -21,5 +21,5 @@ export default async function pekaRequest<ResultType>(method: string, params: Ob
 
     if ("success" in json) return json.success;
     if ("failure" in json) throw new PekaFailure(json.failure);
-    throw Error("Received empty response. Method possibly doesn't exist, or the server is down.");
+    throw new PekaEmptyResponse("Received empty response. Method possibly doesn't exist, or the server is down.");
 }
