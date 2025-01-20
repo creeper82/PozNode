@@ -1,3 +1,3 @@
 export default interface FailureResponse {
-    failure: String;
+    failure: string;
 }
