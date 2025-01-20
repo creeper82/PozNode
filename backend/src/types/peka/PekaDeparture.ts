@@ -7,7 +7,7 @@ export default interface PekaDeparture {
     departure: string;
     line: string;
 
-    vehicle?: String;
+    vehicle?: string;
     lowEntranceBus?: boolean;
     ticketMachine?: boolean;
     lowFloorBus?: boolean;
@@ -16,5 +16,5 @@ export default interface PekaDeparture {
     airCnd?: boolean;
     leRamp?: boolean;
     lfRamp?: boolean;
-
+    bike?: boolean;
 }

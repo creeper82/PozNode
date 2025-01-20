@@ -1,3 +1,5 @@
+import NodeDeparture from "../../../../types/node/NodeDeparture";
+import PekaDeparture from "../../../../types/peka/PekaDeparture";
 import { NodeBollardsResponse, NodeDeparturesResponse, NodeLineStopsResponse, NodeStopsResponse, PekaGetBollardsByLineResponse, PekaGetBollardsResponse, PekaGetLinesResponse, PekaGetStopPointsResponse, PekaGetTimesResponse } from "../../../../types/responses";
 
 export function convertStopsResponse(pekaResponse: PekaGetStopPointsResponse): NodeStopsResponse {
@@ -20,15 +22,43 @@ export function convertBollardsResponse(pekaResponse: PekaGetBollardsResponse): 
 }
 
 export function convertDeparturesResponse(pekaResponse: PekaGetTimesResponse): NodeDeparturesResponse {
-    pekaResponse.times.forEach(time => {
-        time.departure = convertTimestamp(time.departure);
-    });
-
-    return {
+    const converted: NodeDeparturesResponse = {
         bollardName: pekaResponse.bollard.name,
         bollardSymbol: pekaResponse.bollard.symbol,
         announcements: [],
-        departures: pekaResponse.times
+        departures: pekaResponse.times.map(convertDeparture)
+    };
+
+    return converted;
+}
+
+function convertDeparture(departure: PekaDeparture): NodeDeparture {
+    if ("vehicle" in departure) {
+        return {
+            line: departure.line,
+            direction: departure.direction,
+            departure: convertTimestamp(departure.departure),
+            minutes: departure.minutes,
+            realTime: departure.realTime,
+            onStopPoint: departure.onStopPoint,
+            vehicle: {
+                id: departure.vehicle!,
+                airConditioned: departure.airCnd ?? false,
+                bike: departure.bike ?? false,
+                chargers: departure.charger ?? false,
+                lowEntrance: (departure.lowEntranceBus || departure.leRamp) ?? false,
+                lowFloor: (departure.lowFloorBus || departure.lfRamp) ?? false,
+                ramp: (departure.leRamp || departure.lfRamp) ?? false,
+                ticketMachine: departure.ticketMachine ?? false
+            }
+        };
+    } else return {
+        line: departure.line,
+        direction: departure.direction,
+        departure: convertTimestamp(departure.departure),
+        minutes: departure.minutes,
+        realTime: departure.realTime,
+        onStopPoint: departure.onStopPoint
     };
 }
 
