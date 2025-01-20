@@ -1,4 +1,4 @@
-import ServerStats from "./serverStats"
+import ServerStats from "../../types/ServerStats"
 
 function getServerStats() {
     const stats: ServerStats = {
