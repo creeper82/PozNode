@@ -1,5 +1,5 @@
 import { ExternalServerError, ResourceNotFoundError } from "../../../../types/node/errors";
-import Announcement from "../../../../types/peka/announcement";
+import PekaAnnouncement from "../../../../types/peka/PekaAnnouncement";
 import { PekaEmptyResponse, PekaFailure } from "../../../../types/peka/errors";
 import { NodeStopsResponse, NodeBollardsResponse, NodeDeparturesResponse, PekaGetStopPointsResponse, PekaGetBollardsResponse, PekaGetTimesResponse, PekaGetLinesResponse, NodeLineStopsResponse, PekaGetBollardsByLineResponse } from "../../../../types/responses";
 import ApiInterface from "../ApiInterface";
@@ -87,8 +87,8 @@ class PekaApiInterface implements ApiInterface {
         }
     }
 
-    async getAnnouncements(symbol: string): Promise<Announcement[]> {
-        const result = await pekaRequest<Announcement[]>("findMessagesForBollard", { symbol: symbol });
+    async getAnnouncements(symbol: string): Promise<PekaAnnouncement[]> {
+        const result = await pekaRequest<PekaAnnouncement[]>("findMessagesForBollard", { symbol: symbol });
 
         return result.map(announcement => ({
             content: announcement.content,

@@ -1,5 +1,5 @@
 /** Contains information about upcoming departure of a vehicle, and possibly about the vehicle itself. */
-export default interface Departure {
+export default interface PekaDeparture {
     realTime: Boolean;
     minutes: Number;
     direction: string;
