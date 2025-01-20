@@ -1,6 +1,6 @@
 import express from "express";
 
-import serverRouter from "./routes/server/router";
+import serverRouter from "./routes/stats/router";
 import apiRouter from "./routes/api/router";
 import { handle404 } from "./handle404";
 

@@ -7,7 +7,7 @@ serverRouter.get("/", (_, res) => {
     res.send("PozNode backend server v1.0.0 - powered by Node.js")
 })
 
-serverRouter.get("/serverstats", (_, res) => {
+serverRouter.get("/stats", (_, res) => {
     res.json(getServerStats());
 })
 
