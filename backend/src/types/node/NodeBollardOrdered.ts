@@ -2,5 +2,5 @@
 export type NodeBollardOrdered = {
     name: string,
     symbol: string,
-    orderNo: Number
+    orderNo: number
 };
