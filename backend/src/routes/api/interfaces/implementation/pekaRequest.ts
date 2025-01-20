@@ -1,8 +1,8 @@
 import { PekaEmptyResponse, PekaFailure } from "../../../../types/peka/errors";
+import { VALUES } from "../../values";
 
 /** Sends a request to the PEKA Virtual Monitor API. If successful, returns the content inside the `success` property. Otherwise, throws an error. */
 export default async function pekaRequest<ResultType>(method: string, params: Object): Promise<ResultType> {
-    const url = "https://www.peka.poznan.pl/vm/method.vm";
     const headers = {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     };
@@ -11,7 +11,7 @@ export default async function pekaRequest<ResultType>(method: string, params: Ob
         p0: JSON.stringify(params),
     });
 
-    const r = await fetch(url, {
+    const r = await fetch(VALUES.PEKA_VM_URL, {
         method: "POST",
         headers: headers,
         body: body

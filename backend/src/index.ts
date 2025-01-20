@@ -3,15 +3,14 @@ import express from "express";
 import serverRouter from "./routes/stats/router";
 import apiRouter from "./routes/api/router";
 import { handle404 } from "./handle404";
+import { VALUES } from "./routes/api/values";
 
 const app = express();
-
-const PORT = 3202;
 
 app.use("/", serverRouter);
 app.use("/api/", apiRouter);
 app.use(handle404);
 
-app.listen(PORT, () => {
-    console.log("Backend server is running on port: " + PORT);
-})
+app.listen(Number(VALUES.PORT), VALUES.HOST, 511, () => {
+    console.log("Backend server is running on http://" + VALUES.HOST + ":" + VALUES.PORT);
+});
