@@ -16,5 +16,5 @@ export default interface PekaDeparture {
     airCnd?: boolean;
     leRamp?: boolean;
     lfRamp?: boolean;
-
+    bike?: boolean;
 }
