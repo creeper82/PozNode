@@ -3,5 +3,5 @@ export default interface PekaBollard {
     symbol: string;
     tag: string;
     name: string;
-    mainBollard: Boolean;
+    mainBollard: boolean;
 }
