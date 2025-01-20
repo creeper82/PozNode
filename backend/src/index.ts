@@ -1,7 +1,7 @@
 import express from "express";
 
-import serverRouter from "./routers/server/router";
-import apiRouter from "./routers/api/router";
+import serverRouter from "./routes/server/router";
+import apiRouter from "./routes/api/router";
 import { handle404 } from "./handle404";
 
 const app = express();
