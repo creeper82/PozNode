@@ -7,11 +7,11 @@ export const errorHandler = (err: Error, _req: Request, res: Response, next: Nex
     }
 
     if (err instanceof ExternalServerError) {
-        res.status(500).send("External server error: " + err.message || "Unrecognized error occured. No message provided"); return;
+        res.status(500).send("External server error: " + (err.message || "Unrecognized error occured. No message provided")); return;
     }
 
     if (err instanceof MissingParameterError) {
-        res.status(422).send(err.message || "Missing parameters");
+        res.status(422).send(err.message || "Missing parameters"); return;
     }
 
     res.status(500).send("Internal server error: " + (err.message || "Unrecognized error occured. No message provided")); return;
