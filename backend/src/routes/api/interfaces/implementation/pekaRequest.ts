@@ -2,7 +2,7 @@ import { PekaEmptyResponse, PekaFailure } from "../../../../types/peka/errors";
 import { VALUES } from "../../values";
 
 /** Sends a request to the PEKA Virtual Monitor API. If successful, returns the content inside the `success` property. Otherwise, throws an error. */
-export default async function pekaRequest<ResultType>(method: string, params: Object): Promise<ResultType> {
+export default async function pekaRequest<ResultType>(method: string, params: Record<string, any>): Promise<ResultType> {
     const headers = {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     };
