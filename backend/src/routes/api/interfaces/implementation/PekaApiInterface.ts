@@ -6,11 +6,20 @@ import ApiInterface from "../ApiInterface";
 import { convertBollardsResponse, convertDeparturesResponse, convertLinesResponse, convertLineStopsResponse, convertStopsResponse } from "./converters";
 import pekaRequest from "./pekaRequest";
 
+type FetchRequestHandlerType = <ResultType>(method: string, params: Record<string, any>) => Promise<ResultType>;
+
 /** Implementation of the interface, used to retrieve information from the PEKA Virtual Monitor API. */
 class PekaApiInterface implements ApiInterface {
+    /** Sends a request to the PEKA Virtual Monitor API. If successful, returns the content inside the success property. Otherwise, throws an error. */
+    fetchRequestHandler: FetchRequestHandlerType;
+
+    constructor(fetchRequestHandler: FetchRequestHandlerType = pekaRequest) {
+        this.fetchRequestHandler = fetchRequestHandler;
+    }
+
     async getStops(keyword: string): Promise<NodeStopsResponse> {
         try {
-            const result = await pekaRequest<PekaGetStopPointsResponse>("getStopPoints", { pattern: keyword });
+            const result = await this.fetchRequestHandler<PekaGetStopPointsResponse>("getStopPoints", { pattern: keyword });
             return convertStopsResponse(result);
         }
         catch (e: any) {
@@ -24,7 +33,7 @@ class PekaApiInterface implements ApiInterface {
 
     async getBollards(name: string): Promise<NodeBollardsResponse> {
         try {
-            const result = await pekaRequest<PekaGetBollardsResponse>("getBollardsByStopPoint", { name: name });
+            const result = await this.fetchRequestHandler<PekaGetBollardsResponse>("getBollardsByStopPoint", { name: name });
             return convertBollardsResponse(result);
         } catch (e: any) {
             if (e instanceof PekaEmptyResponse || e instanceof PekaFailure) {
@@ -36,7 +45,7 @@ class PekaApiInterface implements ApiInterface {
 
     async getLines(keyword: string): Promise<string[]> {
         try {
-            const result = await pekaRequest<PekaGetLinesResponse>("getLines", { pattern: keyword });
+            const result = await this.fetchRequestHandler<PekaGetLinesResponse>("getLines", { pattern: keyword });
             return convertLinesResponse(result);
         } catch (e: any) {
             if (e instanceof PekaEmptyResponse || e instanceof PekaFailure) {
@@ -48,7 +57,7 @@ class PekaApiInterface implements ApiInterface {
 
     async getLine(line: string): Promise<NodeLineStopsResponse> {
         try {
-            const result = await pekaRequest<PekaGetBollardsByLineResponse>("getBollardsByLine", { name: line });
+            const result = await this.fetchRequestHandler<PekaGetBollardsByLineResponse>("getBollardsByLine", { name: line });
             return convertLineStopsResponse(result);
         }
         catch (e: any) {
@@ -64,7 +73,7 @@ class PekaApiInterface implements ApiInterface {
 
     async getDepartures(symbol: string, lineNumbers?: string[]): Promise<NodeDeparturesResponse> {
         try {
-            let result = await pekaRequest<PekaGetTimesResponse>("getTimes", { symbol: symbol });
+            let result = await this.fetchRequestHandler<PekaGetTimesResponse>("getTimes", { symbol: symbol });
 
             if (lineNumbers) {
                 result.times = result.times.filter(departure => lineNumbers.includes(departure.line));
@@ -88,7 +97,7 @@ class PekaApiInterface implements ApiInterface {
     }
 
     async getAnnouncements(symbol: string): Promise<PekaAnnouncement[]> {
-        const result = await pekaRequest<PekaAnnouncement[]>("findMessagesForBollard", { symbol: symbol });
+        const result = await this.fetchRequestHandler<PekaAnnouncement[]>("findMessagesForBollard", { symbol: symbol });
 
         return result.map(announcement => ({
             content: announcement.content,
