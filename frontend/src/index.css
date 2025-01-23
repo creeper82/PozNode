@@ -1,4 +1,7 @@
 @import "./styles/theme.scss";
+* {
+  box-sizing: border-box;
+}
 
 :root {
   font-family: Ubuntu, Tahoma, sans-serif;
