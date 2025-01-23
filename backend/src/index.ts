@@ -9,7 +9,7 @@ import { VALUES } from "./values";
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:*"
+    origin: "*"
 }));
 
 app.use("/", serverRouter);
