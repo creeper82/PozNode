@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router';
-import MainScreen from "./screens/MainScreen";
+import MainScreen from "./screens/main/MainScreen";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 

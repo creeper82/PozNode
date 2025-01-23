@@ -1,0 +1,18 @@
+@import "./theme.scss";
+
+.root {
+    background-color: var(--background-variant);
+    border-radius: 8px;
+    padding: 16px;
+    padding-left: 2px;
+
+    .title {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .departures {
+        overflow-y: scroll;
+    }
+}
