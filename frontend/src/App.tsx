@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import MainScreen from "./screens/main/MainScreen";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
+import StopScreen from "./screens/stop/StopScreen";
 
 function App() {
   const [isDarkMode, setDarkMode] = useState((localStorage.getItem("PozNodeDarkMode") || "true") == "true");
@@ -15,12 +16,10 @@ function App() {
 
       <BrowserRouter>
         <Header isDarkMode={isDarkMode} onDarkModeChanged={(m) => { setDarkMode(m == "dark"); }} />
-        <div>
-          <Routes>
-            <Route path="" element={<MainScreen />} />
-          </Routes>
-        </div>
-
+        <Routes>
+          <Route path="" element={<MainScreen />} />
+          <Route path="/stop/:name" element={<StopScreen />} />
+        </Routes>
       </BrowserRouter>
     </>
   );

@@ -1,0 +1,15 @@
+@import "./theme.scss";
+
+.root {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid var(--highlight);
+    transition: 100ms background-color;
+    display: inline-block;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--highlight);
+        color: var(--on-primary);
+    }
+}

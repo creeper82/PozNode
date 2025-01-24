@@ -5,10 +5,20 @@ export default class FakeApiService implements ApiService {
     constructor() { }
 
     async getStops(_keyword: string): Promise<StopsResponse> {
-        return Promise.resolve<StopsResponse>([{ name: "s1", symbol: "s1" }, { name: "s2", symbol: "s2" }]);
+        return Promise.resolve<StopsResponse>([{ name: "Metal St", symbol: "s1" }, { name: "Oakville", symbol: "s2" }]);
     }
     async getBollards(_name: string): Promise<BollardsResponse> {
-        return Promise.resolve<BollardsResponse>([{ name: "b1", symbol: "b1", directions: [] }]);
+        return Promise.resolve<BollardsResponse>([{
+            name: "Bollard 1", symbol: "BLD01", directions: [
+                { lineName: "T1", direction: "Fakeland" },
+                { lineName: "T3", direction: "Heaven Depot" }
+            ]
+        }, {
+            name: "Bollard 1", symbol: "BLD02", directions: [
+                { lineName: "T2", direction: "Poland" },
+                { lineName: "101", direction: "Nowhereland" }
+            ]
+        }]);
     }
     async getDepartures(_symbol: string, _lineNumbers?: string[]): Promise<DeparturesResponse> {
         return Promise.resolve<DeparturesResponse>(

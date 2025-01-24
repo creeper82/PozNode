@@ -1,0 +1,25 @@
+@import "./theme.scss";
+
+.root {
+    display: flex;
+    padding-right: 16px;
+    transition: 100ms background-color;
+
+    &:hover {
+        background-color: var(--background);
+    }
+
+    >.line_info {
+        display: flex;
+        flex: 1;
+
+        >.line {
+            width: 48px;
+            text-align: center;
+            font-weight: bold;
+        }
+        >.direction {
+            overflow: hidden; 
+        }
+    }
+}
