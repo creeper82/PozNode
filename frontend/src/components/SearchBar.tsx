@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import style from "../styles/searchbar.module.scss";
 import StopPoint from "../types/StopPoint";
 import StopsLinesSuggestions from "./StopsLinesSuggestions";
-import apiService from "../services/api/PozNodeApiService";
+import apiService from "../services/api/selectedService";
 
 export default function SearchBar({ hint = "", debounce = 600 }: { hint?: string; debounce?: number; }) {
     const [input, setInput] = useState("");

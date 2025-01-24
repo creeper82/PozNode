@@ -1,0 +1,37 @@
+import { StopsResponse, BollardsResponse, DeparturesResponse, LineStopsResponse } from "../../types/responses";
+import ApiService from "./ApiService";
+
+export default class FakeApiService implements ApiService {
+    constructor() { }
+
+    async getStops(_keyword: string): Promise<StopsResponse> {
+        return Promise.resolve<StopsResponse>([{ name: "s1", symbol: "s1" }, { name: "s2", symbol: "s2" }]);
+    }
+    async getBollards(_name: string): Promise<BollardsResponse> {
+        return Promise.resolve<BollardsResponse>([{ name: "b1", symbol: "b1", directions: [] }]);
+    }
+    async getDepartures(_symbol: string, _lineNumbers?: string[]): Promise<DeparturesResponse> {
+        return Promise.resolve<DeparturesResponse>(
+            {
+                announcements: [],
+                bollardName: "nah",
+                bollardSymbol: "nah01",
+                departures: [
+                    { departure: "00:00", direction: "Test", line: "T1", minutes: 0, onStopPoint: true, realTime: true },
+                    { departure: "00:02", direction: "Test2", line: "T2", minutes: 2, onStopPoint: false, realTime: true },
+                    { departure: "00:34", direction: "Test3", line: "TX3", minutes: 34, onStopPoint: false, realTime: false },
+                ]
+            }
+        );
+    }
+    async getLines(_keyword: string): Promise<string[]> {
+        return Promise.resolve(["T1", "T2", "TX3", "101"]);
+    }
+    async getLine(_line: string): Promise<LineStopsResponse> {
+        return Promise.resolve<LineStopsResponse>([
+            { bollards: [], direction: "Testland" },
+            { bollards: [], direction: "Testland2" },
+            { bollards: [], direction: "Depot" },
+        ]);
+    }
+}

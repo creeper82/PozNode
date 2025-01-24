@@ -5,7 +5,7 @@ import ApiService from "./ApiService";
 
 type FetchJsonHandler = <T>(url: string) => Promise<T>;
 
-class PozNodeApiService implements ApiService {
+export default class PozNodeApiService implements ApiService {
     _fetchJsonHandler: FetchJsonHandler;
 
     constructor(fetchJsonHandler: FetchJsonHandler = PozNodeFetchJsonHandler) {
@@ -50,6 +50,3 @@ const PozNodeFetchJsonHandler: FetchJsonHandler = async <T>(url: string) => {
     }
 
 };
-
-const apiService = new PozNodeApiService();
-export default apiService;

@@ -1,12 +1,11 @@
 import style from "../styles/horizontal_departure_list.module.scss";
-import CompactDeparturesCard from "./CompactDeparturesCard";
-import { DeparturesResponse } from "../types/responses";
+import LiveCompactDeparturesCard from "./LiveCompactDeparturesCard";
 
-export default function HorizontalDepartureList({ departures }: { departures: DeparturesResponse[]; }) {
+export default function HorizontalDepartureList({ symbols, intervalSec = 10 }: { symbols: string[]; intervalSec?: number; }) {
     return (
         <div className={style.root}>
-            {departures.map(single =>
-                <CompactDeparturesCard key={single.bollardSymbol} title={single.bollardName} departures={single.departures} />
+            {symbols.map(symbol =>
+                <LiveCompactDeparturesCard key={symbol} symbol={symbol} intervalSec={intervalSec} />
             )}
         </div>
     );
