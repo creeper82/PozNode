@@ -15,7 +15,7 @@ function App() {
 
       <BrowserRouter>
         <Header isDarkMode={isDarkMode} onDarkModeChanged={(m) => { setDarkMode(m == "dark"); }} />
-        <div style={{ padding: "16px" }}>
+        <div>
           <Routes>
             <Route path="" element={<MainScreen />} />
           </Routes>
