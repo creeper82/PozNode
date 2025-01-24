@@ -5,6 +5,8 @@
     border-radius: 8px;
     padding: 16px;
     padding-left: 2px;
+    min-width: 275px;
+    overflow-x: hidden;
 
     .title {
         margin: 0;
@@ -14,5 +16,6 @@
 
     .departures {
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 }
