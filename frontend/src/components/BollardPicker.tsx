@@ -17,6 +17,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
     useEffect(() => {
         async function updateData() {
             try {
+                setLoading(true);
                 const bollards = await apiService.getBollards(stopName);
                 setLoading(false);
 
@@ -25,7 +26,13 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
                 }
                 else {
                     setBollards(bollards);
-                    setSelectedBollardSymbol(initialBollard ?? bollards[0].symbol);
+
+                    if (initialBollard && bollards.some(b => b.symbol == initialBollard)) {
+                        setSelectedBollardSymbol(initialBollard);
+                    }
+                    else {
+                        setSelectedBollardSymbol(bollards[0].symbol);
+                    }
                 }
             } catch (e) {
                 setLoading(false);
@@ -37,7 +44,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
                 setError("Could not load data"); return;
             }
         }
-
+        setSelectedBollardSymbol("");
         updateData();
     }, [stopName]);
 

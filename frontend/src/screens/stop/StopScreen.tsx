@@ -15,6 +15,8 @@ export default function StopScreen() {
         setSearchParams((params) => {
             if (selectedBollardSymbol) {
                 params.set("bollard", selectedBollardSymbol);
+            } else {
+                params.delete("bollard");
             }
 
             return params;
