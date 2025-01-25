@@ -27,12 +27,12 @@ export default function StopScreen() {
         <div className="content">
             <SearchBar />
 
-            {stopName && <>
+            {stopName && <div style={{padding: "16px"}}>
                 <h1>{stopName}</h1>
                 <BollardPicker stopName={stopName} onSelection={setSelectedBollardSymbol} initialBollard={selectedBollardSymbol} />
                 <Divider verticalMargin="16px" />
                 {selectedBollardSymbol && <LiveDeparturesCard symbol={selectedBollardSymbol} intervalSec={10} />}
-            </>}
+            </div>}
 
         </div>
     );

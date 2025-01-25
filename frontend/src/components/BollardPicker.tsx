@@ -44,7 +44,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
                 setError("Could not load data"); return;
             }
         }
-        setSelectedBollardSymbol("");
+        
         updateData();
     }, [stopName]);
 
