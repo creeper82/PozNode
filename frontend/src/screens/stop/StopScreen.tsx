@@ -20,7 +20,7 @@ export default function StopScreen() {
             }
 
             return params;
-        });
+        }, {replace: true});
     }, [selectedBollardSymbol]);
 
     return (
