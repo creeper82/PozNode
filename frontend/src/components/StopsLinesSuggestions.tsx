@@ -9,7 +9,7 @@ export default function StopsLinesSuggestions({ stops, lines, displayed = true }
             {lines.length > 0 &&
                 <>
                     <p className={style.category}>Lines</p><div className={style.lines}>
-                        {lines.map(line => <Link className={style.line} key={line} to={"/line/" + line}>
+                        {lines.map(line => <Link className={style.line} key={line} to={"/line/" + encodeURIComponent(line)}>
                             {line}
                         </Link>
                         )}
@@ -21,7 +21,7 @@ export default function StopsLinesSuggestions({ stops, lines, displayed = true }
             {stops.length > 0 &&
                 <>
                     <p className={style.category}>Stops</p><div className={style.stops}>
-                        {stops.map(stop => <Link className={style.stop} key={stop.symbol} to={"/stop/" + stop.name}>
+                        {stops.map(stop => <Link className={style.stop} key={stop.symbol} to={"/stop/" + encodeURIComponent(stop.name)}>
                             {stop.name}
                         </Link>
                         )}
