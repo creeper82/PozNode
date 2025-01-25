@@ -1,0 +1,42 @@
+@import "./theme.scss";
+
+.root {
+    background-color: var(--background-variant);
+    border-radius: 8px;
+    padding: 16px 8px;
+
+    .title {
+        font-weight: bold;
+        text-align: center;
+        margin: 6px;
+    }
+
+    .row {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        .line {
+            display: inline-block;
+            text-align: right;
+            color: var(--highlight);
+            width: 32px;
+        }
+
+        .direction {
+            display: inline-block;
+            width: 150px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    transition: 150ms background-color, 150ms scale;
+
+    &:hover {
+        cursor: pointer;
+        scale: 1.05;
+        background-color: var(--primary);
+    }
+}

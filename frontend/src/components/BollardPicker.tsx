@@ -4,6 +4,8 @@ import apiService from "../services/api/selectedService";
 import { ResourceNotFoundError } from "../types/errors";
 
 import style from "../styles/bollard_picker.module.scss";
+import AnimateHeight from "react-animate-height";
+import BollardPickerPopup from "./BollardPickerPopup";
 
 export default function BollardPicker({ stopName, onSelection, initialBollard = null }: { stopName: string; onSelection: (bollardSymbol: string) => any; initialBollard?: string | null; }) {
     const [bollards, setBollards] = useState<BollardsResponse>([]);
@@ -41,17 +43,23 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
 
     useEffect(() => {
         onSelection(selectedBollardSymbol);
-    }, [selectedBollardSymbol])
+        setDisplayBollardPicker(false);
+    }, [selectedBollardSymbol]);
 
     return (
         <>
             {loading && <span>Loading...</span>}
             {error && <span>Error: {error}</span>}
 
-            {!loading && !error && <div className={style.root}>
-                {selectedBollardSymbol} {displayBollardPicker ? "▲" : "▼"}
-            </div>}
+            {!loading && !error &&
+                <div className={style.root} onClick={() => setDisplayBollardPicker(!displayBollardPicker)}>
+                    {selectedBollardSymbol} {displayBollardPicker ? "▲" : "▼"}
+                </div>
+            }
 
+            <AnimateHeight height={displayBollardPicker ? "auto" : 0} duration={250}>
+                <BollardPickerPopup bollards={bollards} onSelection={setSelectedBollardSymbol} />
+            </AnimateHeight>
         </>
     );
 }

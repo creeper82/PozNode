@@ -16,7 +16,8 @@ export default class FakeApiService implements ApiService {
         }, {
             name: "Bollard 1", symbol: "BLD02", directions: [
                 { lineName: "T2", direction: "Poland" },
-                { lineName: "101", direction: "Nowhereland" }
+                { lineName: "101", direction: "Nowhereland" },
+                { lineName: "T1", direction: "Sehenswürdigkeitenlandeskunden" }
             ]
         }]);
     }
