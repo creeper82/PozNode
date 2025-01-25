@@ -1,7 +1,7 @@
 import style from "../styles/horizontal_departure_list.module.scss";
 import LiveCompactDeparturesCard from "./LiveCompactDeparturesCard";
 
-export default function HorizontalDepartureList({ symbols, intervalSec = 10 }: { symbols: string[]; intervalSec?: number; }) {
+export default function HorizontalDepartureList({ symbols, intervalSec = 20 }: { symbols: string[]; intervalSec?: number; }) {
     return (
         <div className={style.root}>
             {symbols.map(symbol =>
