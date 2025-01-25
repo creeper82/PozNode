@@ -15,6 +15,20 @@ body {
   transition: 300ms background-color, 300ms color;
 }
 
+.link_reset {
+  text-decoration: none;
+  color: unset;
+}
+
+.link_hoverable {
+  transition: 150ms color;
+}
+
+.link_hoverable:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
 .content {
   margin: 0 auto;
   max-width: 1000px;

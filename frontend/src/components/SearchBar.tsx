@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import style from "../styles/searchbar.module.scss";
 import StopPoint from "../types/StopPoint";
 import StopsLinesSuggestions from "./StopsLinesSuggestions";
@@ -8,10 +8,12 @@ export default function SearchBar({ hint = "Find a stop or line", debounce = 600
     const [input, setInput] = useState("");
     const [suggestions, setSuggestions] = useState<{ stops: StopPoint[], lines: string[]; }>({ stops: [], lines: [] });
     const [displaySuggestions, setDisplaySuggestions] = useState(false);
+    const inputElement = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
         if (input == "") {
-            hideAndClear();
+            hide();
+            setSuggestions({ lines: [], stops: [] });
         }
         else {
             const debounceTimeoutId = setTimeout(async () => { updateSuggestions(); }, debounce);
@@ -21,9 +23,8 @@ export default function SearchBar({ hint = "Find a stop or line", debounce = 600
         }
     }, [input]);
 
-    function hideAndClear() {
+    function hide() {
         setDisplaySuggestions(false);
-        setSuggestions({ lines: [], stops: [] });
     }
 
     async function updateSuggestions() {
@@ -33,10 +34,15 @@ export default function SearchBar({ hint = "Find a stop or line", debounce = 600
         });
     }
 
+    function hideAndRemoveFocus() {
+        setDisplaySuggestions(false);
+        inputElement.current?.blur();
+    }
+
     return (
         <div className={`${style.root} ${displaySuggestions && (suggestions.lines.length > 0 || suggestions.stops.length > 0) ? style.has_suggestions : ""}`}>
-            <input type="text" name="input" id="input" placeholder={hint} onChange={e => setInput(e.target.value.trim())} onBlur={hideAndClear} />
-            <StopsLinesSuggestions lines={suggestions.lines} stops={suggestions.stops} displayed={displaySuggestions} />
+            <input type="text" name="input" id="input" placeholder={hint} ref={inputElement} onChange={e => setInput(e.target.value.trim())} onBlur={hide} onFocus={() => setDisplaySuggestions(true)} />
+            <StopsLinesSuggestions lines={suggestions.lines} stops={suggestions.stops} displayed={displaySuggestions} onSelection={hideAndRemoveFocus} />
         </div>
     );
 }
