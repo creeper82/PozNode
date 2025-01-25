@@ -6,11 +6,15 @@ export default function Minutes({ minutes, live, exactTime }: { minutes: number;
 
     const [displayAltTime, setDisplayAltTime] = useState(false);
 
+    const time =
+        (displayAltTime || minutes >= 60)
+            ? (live ? "~" : "") + exactTime
+            : (rightNow ? "<1" : minutes) + " min";
+
     return (
         <div className={style.root + (live ? ` ${style.live}` : "") + (rightNow ? ` ${style.now}` : "")}>
             <p onMouseEnter={() => setDisplayAltTime(true)} onMouseLeave={() => setDisplayAltTime(false)}>
-                {!displayAltTime && (rightNow ? "<1" : minutes) + " min"}
-                {displayAltTime && "~" + exactTime}
+                {time}
             </p>
         </div>
     );
