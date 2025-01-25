@@ -11,7 +11,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
     const [bollards, setBollards] = useState<BollardsResponse>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const [selectedBollardSymbol, setSelectedBollardSymbol] = useState("");
+    const [selectedBollardSymbol, setSelectedBollardSymbol] = useState(initialBollard ?? "");
     const [displayBollardPicker, setDisplayBollardPicker] = useState(false);
 
     useEffect(() => {
@@ -27,12 +27,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
                 else {
                     setBollards(bollards);
 
-                    if (initialBollard && bollards.some(b => b.symbol == initialBollard)) {
-                        setSelectedBollardSymbol(initialBollard);
-                    }
-                    else {
-                        setSelectedBollardSymbol(bollards[0].symbol);
-                    }
+                    if (!selectedBollardSymbol) setSelectedBollardSymbol(bollards[0].symbol);
                 }
             } catch (e) {
                 setLoading(false);
@@ -44,7 +39,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
                 setError("Could not load data"); return;
             }
         }
-        
+
         updateData();
     }, [stopName]);
 
