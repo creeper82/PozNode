@@ -36,7 +36,12 @@ export default function SearchBar({ hint = "Find a stop or line", debounce = 600
 
     function hideAndRemoveFocus() {
         setDisplaySuggestions(false);
-        inputElement.current?.blur();
+
+        if (inputElement.current) {
+            inputElement.current.blur();
+            inputElement.current.value = "";
+            setInput("");
+        }
     }
 
     return (
