@@ -3,6 +3,7 @@ import MainScreen from "./screens/main/MainScreen";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import StopScreen from "./screens/stop/StopScreen";
+import LineScreen from "./screens/line/LineScreen";
 
 function App() {
   const [isDarkMode, setDarkMode] = useState((localStorage.getItem("PozNodeDarkMode") || "true") == "true");
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="" element={<MainScreen />} />
           <Route path="/stop/:name" element={<StopScreen />} />
+          <Route path="/line/:line" element={<LineScreen />} />
         </Routes>
       </BrowserRouter>
     </>
