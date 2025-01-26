@@ -21,7 +21,7 @@ export default function StopScreen() {
 
             return params;
         }, {replace: true});
-    }, [selectedBollardSymbol]);
+    }, [selectedBollardSymbol, stopName]);
 
     return (
         <div className="content">
