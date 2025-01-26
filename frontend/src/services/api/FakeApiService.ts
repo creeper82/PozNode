@@ -1,3 +1,4 @@
+import BollardOrdered from "../../types/BollardOrdered";
 import { StopsResponse, BollardsResponse, DeparturesResponse, LineStopsResponse } from "../../types/responses";
 import ApiService from "./ApiService";
 
@@ -40,9 +41,15 @@ export default class FakeApiService implements ApiService {
     }
     async getLine(_line: string): Promise<LineStopsResponse> {
         return Promise.resolve<LineStopsResponse>([
-            { bollards: [], direction: "Testland" },
-            { bollards: [], direction: "Testland2" },
-            { bollards: [], direction: "Depot" },
+            { bollards: fakeLine, direction: "Testland" },
+            { bollards: fakeLine, direction: "Testland2" },
+            { bollards: fakeLine, direction: "Depot" },
         ]);
     }
 }
+
+const fakeLine: BollardOrdered[] = [
+    { name: "First stop", symbol: "s1", orderNo: 1 },
+    { name: "Second stop", symbol: "s2", orderNo: 2 },
+    { name: "Depot", symbol: "t1", orderNo: 3 },
+];
