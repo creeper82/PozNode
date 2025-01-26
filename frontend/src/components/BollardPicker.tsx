@@ -5,6 +5,7 @@ import { ResourceNotFoundError } from "../types/errors";
 
 import AnimateHeight from "react-animate-height";
 import BollardPickerPopup from "./BollardPickerPopup";
+import Button from "./Button";
 
 export default function BollardPicker({ stopName, onSelection, initialBollard = null }: { stopName: string; onSelection: (bollardSymbol: string) => any; initialBollard?: string | null; }) {
     const [bollards, setBollards] = useState<BollardsResponse>([]);
@@ -57,9 +58,9 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
             {error && <span>Error: {error}</span>}
 
             {!loading && !error &&
-                <div className="button" onClick={() => setDisplayBollardPicker(!displayBollardPicker)}>
+                <Button onClick={() => setDisplayBollardPicker(!displayBollardPicker)}>
                     {selectedBollardSymbol} {displayBollardPicker ? "▲" : "▼"}
-                </div>
+                </Button>
             }
 
             <AnimateHeight height={displayBollardPicker ? "auto" : 0} duration={250}>
