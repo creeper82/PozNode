@@ -37,3 +37,17 @@ body {
   border-left: 1px solid gray;
   border-right: 1px solid gray;
 }
+
+.button {
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid var(--highlight);
+  transition: 100ms background-color;
+  display: inline-block;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--highlight);
+  color: var(--on-primary);
+}

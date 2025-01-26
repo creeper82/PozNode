@@ -3,7 +3,6 @@ import { BollardsResponse } from "../types/responses";
 import apiService from "../services/api/selectedService";
 import { ResourceNotFoundError } from "../types/errors";
 
-import style from "../styles/bollard_picker.module.scss";
 import AnimateHeight from "react-animate-height";
 import BollardPickerPopup from "./BollardPickerPopup";
 
@@ -58,7 +57,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
             {error && <span>Error: {error}</span>}
 
             {!loading && !error &&
-                <div className={style.root} onClick={() => setDisplayBollardPicker(!displayBollardPicker)}>
+                <div className="button" onClick={() => setDisplayBollardPicker(!displayBollardPicker)}>
                     {selectedBollardSymbol} {displayBollardPicker ? "▲" : "▼"}
                 </div>
             }
