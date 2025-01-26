@@ -1,0 +1,8 @@
+@import "./theme.scss";
+
+.root {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    background-color: var(--background-variant);
+}

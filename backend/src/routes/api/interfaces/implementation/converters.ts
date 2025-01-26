@@ -71,7 +71,8 @@ export function convertLineStopsResponse(pekaResponse: PekaGetBollardsByLineResp
         direction: entry.direction.direction,
         bollards: entry.bollards.map(bollard => ({
             name: bollard.name.substring(0, bollard.name.lastIndexOf("-") - 1),
-            symbol: bollard.symbol,
+            // symbol and tag seems to be swapped in the response
+            symbol: bollard.tag,
             orderNo: bollard.orderNo
         }))
     }));

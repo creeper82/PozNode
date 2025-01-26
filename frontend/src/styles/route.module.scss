@@ -1,0 +1,55 @@
+@import "./theme.scss";
+
+
+
+.root {
+    background-color: var(--background-variant);
+    border-radius: 8px;
+    padding: 8px;
+
+    --stop-circle-size: 15px;
+    --route-line-thickness: 4px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: calc(8px + var(--stop-circle-size) / 2 - var(--route-line-thickness) / 2);
+        border-left: var(--route-line-thickness) solid var(--highlight);
+    }
+}
+
+.stop {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    gap: 10px;
+
+    .indicator_container {
+        width: var(--stop-circle-size);
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .indicator {
+            width: var(--stop-circle-size);
+            height: var(--stop-circle-size);
+            border-radius: 50%;
+            border: 2px solid var(--highlight);
+            background-color: var(--background-variant);
+        }
+    }
+
+    .name_container {
+        flex: 1;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+    }
+}

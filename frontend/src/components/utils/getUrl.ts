@@ -1,4 +1,4 @@
-export function getStopUrl(stopName: string, bollard?: string) {
+export function getStopUrl(stopName: string, bollard: string|null = null) {
     return `/stop/${encodeURIComponent(stopName)}` + (bollard ? `?bollard=${bollard}` : "");
 }
 

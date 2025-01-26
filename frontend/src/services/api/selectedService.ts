@@ -1,5 +1,6 @@
 import FakeApiService from "./FakeApiService";
+import PozNodeApiService from "./PozNodeApiService";
 
-const apiService = new FakeApiService();
+const apiService = new PozNodeApiService();
 
 export default apiService;
