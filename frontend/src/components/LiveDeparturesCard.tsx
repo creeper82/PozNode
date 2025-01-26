@@ -27,7 +27,7 @@ export default function LiveDeparturesCard({ symbol, intervalSec }: { symbol: st
 
     return (
         <>
-            {error && <p>Error</p>}
+            {error && <p>Could not load the departures</p>}
             {!error && !response && <p>Loading...</p>}
             {!error && <DeparturesCard departures={response?.departures ?? []} />}
         </>
