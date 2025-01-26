@@ -7,6 +7,13 @@ import AnimateHeight from "react-animate-height";
 import BollardPickerPopup from "./BollardPickerPopup";
 import Button from "./Button";
 
+export class NoBollardsError extends Error {
+    constructor(message: string) {
+        super(message);
+        this.name = "NoBollardsError";
+    }
+}
+
 export default function BollardPicker({ stopName, onSelection, initialBollard = null }: { stopName: string; onSelection: (bollardSymbol: string) => any; initialBollard?: string | null; }) {
     const [bollards, setBollards] = useState<BollardsResponse>([]);
     const [loading, setLoading] = useState(true);
@@ -22,8 +29,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
                 setLoading(false);
 
                 if (bollards.length == 0) {
-                    setError("Stop has no bollards");
-                    setSelectedBollardSymbol("");
+                    throw new NoBollardsError("Stop has no bollards");
                 }
                 else {
                     setBollards(bollards);
@@ -38,6 +44,10 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
 
                 if (e instanceof ResourceNotFoundError) {
                     setError("No stop with this name"); return;
+                }
+
+                if (e instanceof NoBollardsError) {
+                    setError(e.message); return;
                 }
 
                 setError("Could not load data"); return;
