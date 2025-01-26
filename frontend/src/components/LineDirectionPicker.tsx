@@ -22,7 +22,7 @@ export default function LineDirectionPicker({ directions, onSelection }: { direc
             <AnimateHeight height={displayDirectionPicker ? "auto" : 0} duration={250}>
                 <div style={{ padding: "16px 2px" }}>
                     <p>Directions:</p>
-                    <ChipList style={{ padding: "16px", borderRadius: "8px" }}>
+                    <ChipList style={{ padding: "16px", borderRadius: "8px", fontSize: "1.2em" }}>
                         {directions.map((direction, index) =>
                             <Chip key={`${index}_${direction}`} onClick={() => { onDirectionClick(index); }}>{direction}</Chip>
                         )}
