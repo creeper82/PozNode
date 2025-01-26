@@ -11,9 +11,11 @@ export default function Minutes({ minutes, live, exactTime }: { minutes: number;
             ? (live ? "~" : "") + exactTime
             : (rightNow ? "<1" : minutes) + " min";
 
+    const delayedDisableAltTime = () => { setTimeout(() => { setDisplayAltTime(false); }, 500); };
+
     return (
         <div className={style.root + (live ? ` ${style.live}` : "") + (rightNow ? ` ${style.now}` : "")}>
-            <p onMouseEnter={() => setDisplayAltTime(true)} onMouseLeave={() => setDisplayAltTime(false)}>
+            <p onMouseEnter={() => setDisplayAltTime(true)} onMouseLeave={delayedDisableAltTime}>
                 {time}
             </p>
         </div>
