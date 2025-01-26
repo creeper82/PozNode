@@ -29,7 +29,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
                 setLoading(false);
 
                 if (bollards.length == 0) {
-                    throw new NoBollardsError("Stop has no bollards");
+                    throw new NoBollardsError("Could not find other bollards that belong to this stop");
                 }
                 else {
                     setBollards(bollards);
@@ -40,7 +40,6 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
                 }
             } catch (e) {
                 setLoading(false);
-                setSelectedBollardSymbol("");
 
                 if (e instanceof ResourceNotFoundError) {
                     setError("No stop with this name"); return;
@@ -65,7 +64,7 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
     return (
         <>
             {loading && <span>Loading...</span>}
-            {error && <span>Error: {error}</span>}
+            {error && <span>{error}</span>}
 
             {!loading && !error &&
                 <Button onClick={() => setDisplayBollardPicker(!displayBollardPicker)}>
