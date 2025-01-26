@@ -10,7 +10,7 @@ export default function StopsLinesSuggestions({ stops, lines, displayed = true, 
             {lines.length > 0 &&
                 <>
                     <p className={style.category}>Lines</p><div className={style.lines}>
-                        {lines.map(line => <Link className={style.line} key={line} to={getLineUrl(line)} onClick={onSelection}>
+                        {lines.map(line => <Link className="chip" key={line} to={getLineUrl(line)} onClick={onSelection}>
                             {line}
                         </Link>
                         )}
@@ -22,7 +22,7 @@ export default function StopsLinesSuggestions({ stops, lines, displayed = true, 
             {stops.length > 0 &&
                 <>
                     <p className={style.category}>Stops</p><div className={style.stops}>
-                        {stops.map(stop => <Link className={style.stop} key={stop.symbol} to={getStopUrl(stop.name)} onClick={onSelection}>
+                        {stops.map(stop => <Link className="chip" key={stop.symbol} to={getStopUrl(stop.name)} onClick={onSelection}>
                             {stop.name}
                         </Link>
                         )}
