@@ -29,6 +29,8 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
 
                     if (!selectedBollardSymbol) setSelectedBollardSymbol(bollards[0].symbol);
                 }
+
+                setError(null);
             } catch (e) {
                 setLoading(false);
 
