@@ -15,7 +15,7 @@ export default function DeparturesTable({ departures, announcements = [] }: { de
             <div className={style.departures}>
                 {departures.map(departure =>
                     <div key={getDepartureKey(departure)}>
-                        <DepartureComponent line={departure.line} direction={departure.direction} minutes={departure.minutes} exactTime={departure.departure} live={departure.realTime} />
+                        <DepartureComponent line={departure.line} direction={departure.direction} minutes={departure.minutes} exactTime={departure.departure} live={departure.realTime} vehicle={departure.vehicle} />
                     </div>
                 )}
             </div>
