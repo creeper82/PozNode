@@ -14,7 +14,7 @@ export default function VehicleData({ vehicle: v }: { vehicle: Vehicle; }) {
     return (
         <div className={style.root}>
             <p>Accessibility: <b>{accessibilityText || "None"}</b></p>
-            <p>Vehicle ID: <b><a className="link_hoverable" href={getPhotoTransUrl(v.id)}>{v.id}</a></b></p>
+            <p>Vehicle ID: <b><a className="link_hoverable" href={getPhotoTransUrl(v.id)} title="Find vehicle on phototrans">{v.id}</a></b></p>
             {v.chargers != undefined && <p>USB Chargers: <b>{v.chargers ? "Yes" : "No"}</b></p>}
         </div>
     );

@@ -20,7 +20,7 @@ export default function Departure({ line, direction, minutes, exactTime, live, v
                     <p className={style.direction}>{direction}</p>
                 </div>
                 <Minutes minutes={minutes} live={live} exactTime={exactTime} />
-                {vehicle && <span className={style.arrow}>{showVehicle ? "▲" : "▼"}</span>}
+                <span className={style.arrow}>{vehicle && (showVehicle ? "▲" : "▼")}</span>
 
             </div>
 
