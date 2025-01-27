@@ -20,14 +20,18 @@ export default function StopScreen() {
             }
 
             return params;
-        }, {replace: true});
+        }, { replace: true });
     }, [selectedBollardSymbol, stopName]);
+
+    useEffect(() => {
+        document.title = stopName + " - PozNode";
+    }, [stopName]);
 
     return (
         <div className="content">
             <SearchBar />
 
-            {stopName && <div style={{padding: "16px"}}>
+            {stopName && <div style={{ padding: "16px" }}>
                 <h1>{stopName}</h1>
                 <BollardPicker stopName={stopName} onSelection={setSelectedBollardSymbol} initialBollard={selectedBollardSymbol} />
                 <Divider verticalMargin="16px" />
