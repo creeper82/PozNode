@@ -44,6 +44,7 @@ export default function LineScreen() {
             }
         }
 
+        document.title = `Line ${line} - PozNode`;
         updateData();
     }, [line]);
 
