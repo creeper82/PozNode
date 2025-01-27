@@ -3,6 +3,7 @@ import style from "../styles/departures_card.module.scss";
 import DepartureComponent from "./Departure";
 import Announcement from "../types/Announcement";
 import ExpandableAnnouncements from "./ExpandableAnnouncements";
+import getDepartureKey from "./utils/getDepartureKey";
 
 export default function DeparturesTable({ departures, announcements = [] }: { departures: Departure[]; announcements?: Announcement[]; }) {
     return (
@@ -13,7 +14,7 @@ export default function DeparturesTable({ departures, announcements = [] }: { de
 
             <div className={style.departures}>
                 {departures.map(departure =>
-                    <div key={`${departure.line}_${departure.direction}_${departure.minutes}`}>
+                    <div key={getDepartureKey(departure)}>
                         <DepartureComponent line={departure.line} direction={departure.direction} minutes={departure.minutes} exactTime={departure.departure} live={departure.realTime} />
                     </div>
                 )}
