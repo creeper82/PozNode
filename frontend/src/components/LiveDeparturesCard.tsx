@@ -35,7 +35,7 @@ export default function LiveDeparturesCard({ symbol, intervalSec }: { symbol: st
         <>
             {error && <p>{error}</p>}
             {!error && !response && <p>Loading...</p>}
-            {!error && <DeparturesCard departures={response?.departures ?? []} />}
+            {!error && <DeparturesCard departures={response?.departures ?? []} announcements={response?.announcements} />}
         </>
 
     );

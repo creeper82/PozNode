@@ -25,7 +25,18 @@ export default class FakeApiService implements ApiService {
     async getDepartures(_symbol: string, _lineNumbers?: string[]): Promise<DeparturesResponse> {
         return Promise.resolve<DeparturesResponse>(
             {
-                announcements: [],
+                announcements: [
+                    {
+                        startDate: "2024-01-01",
+                        endDate: "2024-03-31",
+                        content: "Users of line T1 and T2 may experience delays up to 1 hour long, due to roadworks near Metal St. Is it advised to use the train instead."
+                    },
+                    {
+                        startDate: "2024-01-27",
+                        endDate: "2024-01-29",
+                        content: "This Tuesday, line TX3 will not operate after 6PM, due to the local festivals."
+                    },
+                ],
                 bollardName: "nah",
                 bollardSymbol: "nah01",
                 departures: [
