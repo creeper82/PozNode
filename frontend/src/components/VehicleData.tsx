@@ -6,7 +6,7 @@ export default function VehicleData({ vehicle: v }: { vehicle: Vehicle; }) {
     const accessibilityText = (v.ramp || v.lowEntrance || v.lowFloor)
         ? [
             v.ramp && "ramp",
-            v.lowEntrance && "partial low entrance",
+            v.lowEntrance && "partially low entrance",
             v.lowFloor && "fully low floor"
         ].filter(Boolean).join(", ")
         : "Unknown";
