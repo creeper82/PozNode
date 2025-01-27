@@ -2,11 +2,17 @@
 
 .root {
     display: flex;
+    align-items: center;
     padding-right: 16px;
     transition: 100ms background-color;
+    font-size: 1.1em;
 
     &:hover {
         background-color: var(--background);
+    }
+
+    &.clickable:hover {
+        cursor: pointer;
     }
 
     >.line_info {
@@ -17,9 +23,16 @@
             width: 48px;
             text-align: center;
             font-weight: bold;
+            color: var(--highlight);
         }
         >.direction {
             overflow: hidden; 
         }
+    }
+
+    .arrow {
+        width: 25px;
+        padding-left: 8px;
+        font-size: 0.8em;
     }
 }
