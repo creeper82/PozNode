@@ -6,6 +6,7 @@ import { ResourceNotFoundError } from "../types/errors";
 import AnimateHeight from "react-animate-height";
 import BollardPickerPopup from "./BollardPickerPopup";
 import Button from "./Button";
+import FavoriteButton from "./FavoriteButton";
 
 export class NoBollardsError extends Error {
     constructor(message: string) {
@@ -14,7 +15,7 @@ export class NoBollardsError extends Error {
     }
 }
 
-export default function BollardPicker({ stopName, onSelection, initialBollard = null }: { stopName: string; onSelection: (bollardSymbol: string) => any; initialBollard?: string | null; }) {
+export default function BollardPicker({ stopName, onSelection, initialBollard = null, favButton = false }: { stopName: string; onSelection: (bollardSymbol: string) => any; initialBollard?: string | null; favButton?: boolean }) {
     const [bollards, setBollards] = useState<BollardsResponse>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -67,9 +68,12 @@ export default function BollardPicker({ stopName, onSelection, initialBollard = 
             {error && <span>{error}</span>}
 
             {!loading && !error &&
-                <Button onClick={() => setDisplayBollardPicker(!displayBollardPicker)}>
-                    {selectedBollardSymbol} {displayBollardPicker ? "▲" : "▼"}
-                </Button>
+                <div style={{ display: "flex", gap: "4px" }}>
+                    <Button onClick={() => setDisplayBollardPicker(!displayBollardPicker)}>
+                        {selectedBollardSymbol} {displayBollardPicker ? "▲" : "▼"}
+                    </Button>
+                    {favButton && selectedBollardSymbol && <FavoriteButton favKey={selectedBollardSymbol} />}
+                </div>
             }
 
             <AnimateHeight height={displayBollardPicker ? "auto" : 0} duration={250}>
