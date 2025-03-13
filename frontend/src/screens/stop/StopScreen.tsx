@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import BollardPicker from "../../components/BollardPicker";
 import LiveDeparturesCard from "../../components/LiveDeparturesCard";
 import Divider from "../../components/Divider";
+import FavoriteButton from "../../components/FavoriteButton";
 
 export default function StopScreen() {
     const { name: stopName } = useParams();
@@ -33,7 +34,7 @@ export default function StopScreen() {
 
             {stopName && <div style={{ padding: "16px" }}>
                 <h1>{stopName}</h1>
-                <BollardPicker stopName={stopName} onSelection={setSelectedBollardSymbol} initialBollard={selectedBollardSymbol} />
+                <BollardPicker stopName={stopName} onSelection={setSelectedBollardSymbol} initialBollard={selectedBollardSymbol} favButton />
                 <Divider verticalMargin="16px" />
                 {selectedBollardSymbol && <LiveDeparturesCard symbol={selectedBollardSymbol} intervalSec={10} />}
             </div>}
