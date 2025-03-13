@@ -1,0 +1,71 @@
+@import "./styles/theme.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Ubuntu, Tahoma, sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--on-background);
+  transition: 300ms background-color, 300ms color;
+}
+
+.link_reset, a {
+  text-decoration: none;
+  color: unset;
+}
+
+.link_hoverable {
+  transition: 150ms color;
+}
+
+.link_hoverable:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: calc(100vh - 80px);
+  padding: 16px 0;
+}
+
+.button {
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid var(--highlight);
+  transition: 100ms background-color;
+  display: inline-block;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--highlight);
+  color: var(--on-primary);
+}
+
+.chip {
+  border-radius: 8px;
+  padding: 4px 10px;
+
+  background-color: var(--background);
+  color: var(--on-background);
+  transition: color 300ms, background-color 100ms;
+}
+
+.chip:hover {
+  cursor: pointer;
+  color: var(--background);
+  background-color: var(--highlight);
+}
+

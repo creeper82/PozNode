@@ -1,0 +1,18 @@
+@import "./theme.scss";
+
+.suggestion {
+    background-color: var(--background-variant);
+    color: var(--on-background);
+    transition: color 300ms, background-color 100ms;
+    padding: 8px 8px;
+
+    p {
+        margin: 0;
+    }
+
+    &:hover {
+        background-color: var(--highlight);
+        color: var(--background-variant);
+        cursor: pointer;
+    }
+}

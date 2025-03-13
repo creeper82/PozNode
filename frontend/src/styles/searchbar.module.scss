@@ -1,0 +1,33 @@
+@import "./theme.scss";
+
+.root {
+    width: 95%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+
+    >input {
+        outline: unset;
+        border: unset;
+        width: 100%;
+        font-size: 1.4em;
+
+        max-width: 600px;
+        color: var(--on-background);
+        border-radius: 10px;
+        padding: 12px 8px;
+        background-color: var(--background-variant);
+
+        &:focus {
+            border: 2px solid var(--on-background);
+        }
+    }
+
+    &.has_suggestions {
+        >input {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import "./theme.scss";
+
+.root {
+    background-color: var(--background-variant);
+    border-radius: 8px;
+    padding: 0 0;
+    min-width: 290px;
+    overflow-x: hidden;
+
+    .departures {
+        overflow-x: hidden;
+    }
+}

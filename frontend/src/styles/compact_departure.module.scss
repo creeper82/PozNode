@@ -1,0 +1,24 @@
+@import "./theme.scss";
+
+.root {
+    display: flex;
+    padding-right: 16px;
+
+    >.line_info {
+        display: flex;
+        flex: 1;
+
+        >.line {
+            width: 48px;
+            text-align: center;
+            font-weight: bold;
+            color: var(--highlight);
+        }
+        >.direction {
+            width: 150px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; 
+        }
+    }
+}
