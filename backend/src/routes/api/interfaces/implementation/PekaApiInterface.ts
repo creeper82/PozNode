@@ -100,10 +100,18 @@ class PekaApiInterface implements ApiInterface {
         const result = await this.fetchRequestHandler<PekaAnnouncement[]>("findMessagesForBollard", { symbol: symbol });
 
         return result.map(announcement => ({
-            content: announcement.content,
+            content: stripHtml(announcement.content),
             startDate: announcement.startDate.substring(0, 10),
             endDate: announcement.endDate.substring(0, 10)
         }));
+
+        function stripHtml(x: string) {
+            if (x.includes(">") && x.includes("<")) {
+                return x.slice(x.indexOf(">") + 1, x.lastIndexOf("<"));
+            }
+
+            return x;
+        }
     }
 }
 
