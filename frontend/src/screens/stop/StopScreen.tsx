@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import BollardPicker from "../../components/BollardPicker";
 import LiveDeparturesCard from "../../components/LiveDeparturesCard";
 import Divider from "../../components/Divider";
-import FavoriteButton from "../../components/FavoriteButton";
 
 export default function StopScreen() {
     const { name: stopName } = useParams();
