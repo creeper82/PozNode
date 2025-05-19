@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Niestachowska nż.",
+        "symbol": "NIES02",
+        "directions": [
+            {
+                "lineName": "182",
+                "direction": "Górczyn PKM"
+            },
+            {
+                "lineName": "193",
+                "direction": "Górczyn PKM"
+            },
+            {
+                "lineName": "193",
+                "direction": "Jawornicka"
+            },
+            {
+                "lineName": "835",
+                "direction": "Ogrody"
+            },
+            {
+                "lineName": "836",
+                "direction": "Ogrody"
+            },
+            {
+                "lineName": "837",
+                "direction": "Ogrody"
+            }
+        ]
+    },
+    {
+        "name": "Niestachowska nż.",
+        "symbol": "NIES01",
+        "directions": [
+            {
+                "lineName": "182",
+                "direction": "Os. Wichrowe Wzgórze"
+            },
+            {
+                "lineName": "193",
+                "direction": "Os. Sobieskiego"
+            },
+            {
+                "lineName": "835",
+                "direction": "Kiekrz"
+            },
+            {
+                "lineName": "835",
+                "direction": "Rokietnica/Węzeł Przesiadkowy"
+            },
+            {
+                "lineName": "836",
+                "direction": "Kobylniki/Tarnowska"
+            },
+            {
+                "lineName": "837",
+                "direction": "Pawłowice/Pętla"
+            }
+        ]
+    },
+    {
+        "name": "Niestachowska nż.",
+        "symbol": "NIES04",
+        "directions": [
+            {
+                "lineName": "191",
+                "direction": "Os. Sobieskiego"
+            }
+        ]
+    },
+    {
+        "name": "Niestachowska nż.",
+        "symbol": "NIES03",
+        "directions": [
+            {
+                "lineName": "191",
+                "direction": "Os. Kopernika"
+            }
+        ]
+    }
+]

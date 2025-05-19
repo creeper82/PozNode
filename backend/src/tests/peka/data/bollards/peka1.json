@@ -1,0 +1,39 @@
+{
+    "bollards": [
+        {
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineName": "171",
+                    "direction": "Os. Dębina"
+                }
+            ],
+            "bollard": {
+                "symbol": "BERG21",
+                "name": "Bergera",
+                "tag": "BERG01",
+                "mainBollard": false
+            }
+        },
+        {
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineName": "171",
+                    "direction": "Os. Wichrowe Wzgórze"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "171",
+                    "direction": "Urząd Wojewódzki"
+                }
+            ],
+            "bollard": {
+                "symbol": "BERG22",
+                "name": "Bergera",
+                "tag": "BERG02",
+                "mainBollard": false
+            }
+        }
+    ]
+}

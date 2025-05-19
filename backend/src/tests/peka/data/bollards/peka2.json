@@ -1,0 +1,114 @@
+{
+    "bollards": [
+        {
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineName": "2",
+                    "direction": "Franowo"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "2",
+                    "direction": "Ogrody"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "6",
+                    "direction": "Budziszyńska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "9",
+                    "direction": "Piątkowska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "10",
+                    "direction": "Franowo"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "10",
+                    "direction": "Błażeja"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "19",
+                    "direction": "Połabska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "215",
+                    "direction": "Rondo Kaponiera"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "215",
+                    "direction": "Os. Sobieskiego"
+                }
+            ],
+            "bollard": {
+                "symbol": "RYWI72",
+                "name": "Rynek Wildecki",
+                "tag": "RYWI72",
+                "mainBollard": false
+            }
+        },
+        {
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineName": "2",
+                    "direction": "Dębiec PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "9",
+                    "direction": "Dębiec PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "9",
+                    "direction": "Głogowska/Hetmańska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "10",
+                    "direction": "Dębiec PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "10",
+                    "direction": "Franowo"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "19",
+                    "direction": "Dębiec PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "19",
+                    "direction": "Franowo"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "215",
+                    "direction": "Os. Dębina"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "215",
+                    "direction": "Luboń/Kręta"
+                }
+            ],
+            "bollard": {
+                "symbol": "RYWI71",
+                "name": "Rynek Wildecki",
+                "tag": "RYWI71",
+                "mainBollard": false
+            }
+        }
+    ]
+}

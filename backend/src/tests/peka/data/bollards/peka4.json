@@ -1,0 +1,60 @@
+{
+    "not_bollards": {
+        "crappyAdvertisement": "save $0.01 on your node.js license"
+    },
+    "bollards": [
+        {
+            "sushi": "adam",
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineColor": "#FFFGSDGHSDH@*827273663713478387",
+                    "lineName": "348",
+                    "direction": "Przebędowo/Pętla"
+                },
+                {
+                    "additionalProperty": 3.1415,
+                    "returnVariant": false,
+                    "lineName": "348",
+                    "direction": "Os. Sobieskiego"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "397",
+                    "direction": "Potasze/Jodłowa"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "397",
+                    "direction": "Biedrusko/Park"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "397",
+                    "direction": "Bolechowo-Os./PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "397",
+                    "direction": "Trzaskowo/Wieś"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "911",
+                    "direction": "Rondo Śródka"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "911",
+                    "direction": "Biedrusko/Park"
+                }
+            ],
+            "bollard": {
+                "symbol": "BIPA22",
+                "name": "Biedrusko/Park",
+                "tag": "BIPRK02",
+                "mainBollard": false
+            }
+        }
+    ]
+}
