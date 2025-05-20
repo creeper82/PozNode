@@ -1,0 +1,512 @@
+[
+    {
+        "direction": "Połabska",
+        "bollards": [
+            {
+                "name": "Franowo",
+                "symbol": "FRWO42",
+                "orderNo": 1
+            },
+            {
+                "name": "Szwajcarska",
+                "symbol": "SZWA42",
+                "orderNo": 2
+            },
+            {
+                "name": "Szwedzka",
+                "symbol": "SZWE42",
+                "orderNo": 3
+            },
+            {
+                "name": "Piaśnicka/Kurlandzka",
+                "symbol": "PK42",
+                "orderNo": 4
+            },
+            {
+                "name": "Piaśnicka Rynek",
+                "symbol": "PIAR42",
+                "orderNo": 5
+            },
+            {
+                "name": "Os. Czecha",
+                "symbol": "OCZ71",
+                "orderNo": 6
+            },
+            {
+                "name": "Żegrze III",
+                "symbol": "ZIII41",
+                "orderNo": 7
+            },
+            {
+                "name": "Żegrze II",
+                "symbol": "Z II41",
+                "orderNo": 8
+            },
+            {
+                "name": "Żegrze I",
+                "symbol": "Z I41",
+                "orderNo": 9
+            },
+            {
+                "name": "Rondo Żegrze",
+                "symbol": "RZEG43",
+                "orderNo": 10
+            },
+            {
+                "name": "Rondo Żegrze",
+                "symbol": "RZEG41",
+                "orderNo": 11
+            },
+            {
+                "name": "Rondo Starołęka",
+                "symbol": "RSTA47",
+                "orderNo": 12
+            },
+            {
+                "name": "Rondo Starołęka",
+                "symbol": "RSTA43",
+                "orderNo": 13
+            },
+            {
+                "name": "Hetmańska Wiadukt",
+                "symbol": "HEWI41",
+                "orderNo": 14
+            },
+            {
+                "name": "Rolna",
+                "symbol": "ROLN41",
+                "orderNo": 15
+            },
+            {
+                "name": "Traugutta",
+                "symbol": "TRAU43",
+                "orderNo": 16
+            },
+            {
+                "name": "Pamiątkowa",
+                "symbol": "PAMI72",
+                "orderNo": 17
+            },
+            {
+                "name": "Kosińskiego",
+                "symbol": "KOSI72",
+                "orderNo": 18
+            },
+            {
+                "name": "Rynek Wildecki",
+                "symbol": "RYWI72",
+                "orderNo": 19
+            },
+            {
+                "name": "Różana",
+                "symbol": "ROZA42",
+                "orderNo": 20
+            },
+            {
+                "name": "Półwiejska",
+                "symbol": "POLW42",
+                "orderNo": 21
+            },
+            {
+                "name": "AWF",
+                "symbol": "AWF42",
+                "orderNo": 22
+            },
+            {
+                "name": "Łąkowa",
+                "symbol": "LAKO42",
+                "orderNo": 23
+            },
+            {
+                "name": "Pl. Wiosny Ludów",
+                "symbol": "PLWL42",
+                "orderNo": 24
+            },
+            {
+                "name": "Aleje Marcinkowskiego",
+                "symbol": "MRCI72",
+                "orderNo": 25
+            },
+            {
+                "name": "27 Grudnia - Teatr Polski",
+                "symbol": "GRUD72",
+                "orderNo": 26
+            },
+            {
+                "name": "Fredry",
+                "symbol": "FRRY42",
+                "orderNo": 27
+            },
+            {
+                "name": "Most Teatralny",
+                "symbol": "MT44",
+                "orderNo": 28
+            },
+            {
+                "name": "Poznańska",
+                "symbol": "POZN41",
+                "orderNo": 29
+            },
+            {
+                "name": "Wielkopolska",
+                "symbol": "WIKA41",
+                "orderNo": 30
+            },
+            {
+                "name": "Armii Poznań",
+                "symbol": "ARPO41",
+                "orderNo": 31
+            },
+            {
+                "name": "Żniwna",
+                "symbol": "ZNIW71",
+                "orderNo": 32
+            },
+            {
+                "name": "Pasieka",
+                "symbol": "PASI41",
+                "orderNo": 33
+            },
+            {
+                "name": "Murawa",
+                "symbol": "MURA41",
+                "orderNo": 34
+            },
+            {
+                "name": "Os. Pod Lipami",
+                "symbol": "OPL41",
+                "orderNo": 35
+            },
+            {
+                "name": "Rondo Solidarności",
+                "symbol": "ROSO41",
+                "orderNo": 36
+            },
+            {
+                "name": "Połabska",
+                "symbol": "POLA41",
+                "orderNo": 37
+            },
+            {
+                "name": "Dębiec PKM",
+                "symbol": "DEEC42",
+                "orderNo": 1
+            },
+            {
+                "name": "Wspólna",
+                "symbol": "WSPO42",
+                "orderNo": 2
+            },
+            {
+                "name": "HCP",
+                "symbol": "HCP42",
+                "orderNo": 3
+            },
+            {
+                "name": "Traugutta",
+                "symbol": "TRAU42",
+                "orderNo": 4
+            },
+            {
+                "name": "Głogowska/Hetmańska",
+                "symbol": "GLHE44",
+                "orderNo": 1
+            },
+            {
+                "name": "Kolejowa",
+                "symbol": "KOLE42",
+                "orderNo": 2
+            },
+            {
+                "name": "Traugutta",
+                "symbol": "TRAU44",
+                "orderNo": 3
+            },
+            {
+                "name": "Głogowska/Hetmańska",
+                "symbol": "GLHE72",
+                "orderNo": 1
+            },
+            {
+                "name": "Rynek Łazarski",
+                "symbol": "RYLA72",
+                "orderNo": 2
+            },
+            {
+                "name": "Park Wilsona",
+                "symbol": "PAWI72",
+                "orderNo": 3
+            },
+            {
+                "name": "Dworzec Zachodni",
+                "symbol": "DWZA72",
+                "orderNo": 4
+            },
+            {
+                "name": "Most Dworcowy",
+                "symbol": "MODW72",
+                "orderNo": 5
+            },
+            {
+                "name": "Rondo Kaponiera",
+                "symbol": "RKAP72",
+                "orderNo": 6
+            },
+            {
+                "name": "Kolejowa",
+                "symbol": "KOLE41",
+                "orderNo": 5
+            },
+            {
+                "name": "Głogowska/Hetmańska",
+                "symbol": "GLHE43",
+                "orderNo": 6
+            }
+        ]
+    },
+    {
+        "direction": "Dębiec PKM",
+        "bollards": [
+            {
+                "name": "Połabska",
+                "symbol": "POLA42",
+                "orderNo": 1
+            },
+            {
+                "name": "Rondo Solidarności",
+                "symbol": "ROSO42",
+                "orderNo": 2
+            },
+            {
+                "name": "Os. Pod Lipami",
+                "symbol": "OPL42",
+                "orderNo": 3
+            },
+            {
+                "name": "Murawa",
+                "symbol": "MURA42",
+                "orderNo": 4
+            },
+            {
+                "name": "Pasieka",
+                "symbol": "PASI42",
+                "orderNo": 5
+            },
+            {
+                "name": "Żniwna",
+                "symbol": "ZNIW42",
+                "orderNo": 6
+            },
+            {
+                "name": "Armii Poznań",
+                "symbol": "ARPO42",
+                "orderNo": 7
+            },
+            {
+                "name": "Wielkopolska",
+                "symbol": "WIKA42",
+                "orderNo": 8
+            },
+            {
+                "name": "Poznańska",
+                "symbol": "POZN42",
+                "orderNo": 9
+            },
+            {
+                "name": "Most Teatralny",
+                "symbol": "MT73",
+                "orderNo": 10
+            },
+            {
+                "name": "Fredry",
+                "symbol": "FRRY41",
+                "orderNo": 11
+            },
+            {
+                "name": "Gwarna",
+                "symbol": "GWAR71",
+                "orderNo": 12
+            },
+            {
+                "name": "Święty Marcin",
+                "symbol": "SWMN71",
+                "orderNo": 13
+            },
+            {
+                "name": "Aleje Marcinkowskiego",
+                "symbol": "MRCI71",
+                "orderNo": 14
+            },
+            {
+                "name": "Pl. Wiosny Ludów",
+                "symbol": "PLWL41",
+                "orderNo": 15
+            },
+            {
+                "name": "Łąkowa",
+                "symbol": "LAKO41",
+                "orderNo": 16
+            },
+            {
+                "name": "AWF",
+                "symbol": "AWF41",
+                "orderNo": 17
+            },
+            {
+                "name": "Półwiejska",
+                "symbol": "POLW41",
+                "orderNo": 18
+            },
+            {
+                "name": "Różana",
+                "symbol": "ROZA41",
+                "orderNo": 19
+            },
+            {
+                "name": "Rynek Wildecki",
+                "symbol": "RYWI71",
+                "orderNo": 20
+            },
+            {
+                "name": "Kosińskiego",
+                "symbol": "KOSI71",
+                "orderNo": 21
+            },
+            {
+                "name": "Pamiątkowa",
+                "symbol": "PAMI71",
+                "orderNo": 22
+            },
+            {
+                "name": "Traugutta",
+                "symbol": "TRAU41",
+                "orderNo": 23
+            },
+            {
+                "name": "HCP",
+                "symbol": "HCP41",
+                "orderNo": 24
+            },
+            {
+                "name": "Wspólna",
+                "symbol": "WSPO41",
+                "orderNo": 25
+            },
+            {
+                "name": "Dębiec PKM",
+                "symbol": "DEEC41",
+                "orderNo": 26
+            },
+            {
+                "name": "Rolna",
+                "symbol": "ROLN42",
+                "orderNo": 23
+            },
+            {
+                "name": "Hetmańska Wiadukt",
+                "symbol": "HEWI42",
+                "orderNo": 24
+            },
+            {
+                "name": "Rondo Starołęka",
+                "symbol": "RSTA44",
+                "orderNo": 25
+            },
+            {
+                "name": "Rondo Starołęka",
+                "symbol": "RSTA48",
+                "orderNo": 26
+            },
+            {
+                "name": "Rondo Żegrze",
+                "symbol": "RZEG42",
+                "orderNo": 27
+            },
+            {
+                "name": "Rondo Żegrze",
+                "symbol": "RZEG44",
+                "orderNo": 28
+            },
+            {
+                "name": "Żegrze I",
+                "symbol": "Z I42",
+                "orderNo": 29
+            },
+            {
+                "name": "Żegrze II",
+                "symbol": "Z II42",
+                "orderNo": 30
+            },
+            {
+                "name": "Żegrze III",
+                "symbol": "ZIII42",
+                "orderNo": 31
+            },
+            {
+                "name": "Os. Czecha",
+                "symbol": "OCZ72",
+                "orderNo": 32
+            },
+            {
+                "name": "Piaśnicka Rynek",
+                "symbol": "PIAR41",
+                "orderNo": 33
+            },
+            {
+                "name": "Piaśnicka/Kurlandzka",
+                "symbol": "PK41",
+                "orderNo": 34
+            },
+            {
+                "name": "Szwedzka",
+                "symbol": "SZWE41",
+                "orderNo": 35
+            },
+            {
+                "name": "Szwajcarska",
+                "symbol": "SZWA41",
+                "orderNo": 36
+            },
+            {
+                "name": "Franowo",
+                "symbol": "FRWO41",
+                "orderNo": 37
+            },
+            {
+                "name": "Most Teatralny",
+                "symbol": "MT71",
+                "orderNo": 10
+            },
+            {
+                "name": "Rondo Kaponiera",
+                "symbol": "RKAP71",
+                "orderNo": 11
+            },
+            {
+                "name": "Most Dworcowy",
+                "symbol": "MODW71",
+                "orderNo": 12
+            },
+            {
+                "name": "Dworzec Zachodni",
+                "symbol": "DWZA71",
+                "orderNo": 13
+            },
+            {
+                "name": "Park Wilsona",
+                "symbol": "PAWI71",
+                "orderNo": 14
+            },
+            {
+                "name": "Rynek Łazarski",
+                "symbol": "RYLA71",
+                "orderNo": 15
+            },
+            {
+                "name": "Głogowska/Hetmańska",
+                "symbol": "GLHE71",
+                "orderNo": 16
+            }
+        ]
+    }
+]

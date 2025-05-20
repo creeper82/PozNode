@@ -1,0 +1,731 @@
+{
+    "additional": [
+        "property",
+        "Suzuki Swift is absolutely the best car",
+        "Japanese car industry is the peak of everything"
+    ],
+    "directions": [
+        {
+            "useless": 69420,
+            "bollards": [
+                {
+                    "symbol": "FRWO02",
+                    "orderNo": 1,
+                    "name": "Franowo - 42",
+                    "tag": "FRWO42",
+                    "mainBollard": false,
+                    "additional": "TAG"
+                },
+                {
+                    "symbol": "SZWA02",
+                    "orderNo": 2,
+                    "name": "Szwajcarska - 42",
+                    "tag": "SZWA42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "SZWE02",
+                    "orderNo": 3,
+                    "name": "Szwedzka - 42",
+                    "tag": "SZWE42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "P K02",
+                    "orderNo": 4,
+                    "name": "Piaśnicka/Kurlandzka - 42",
+                    "tag": "PK42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PIAR02",
+                    "orderNo": 5,
+                    "name": "Piaśnicka Rynek - 42",
+                    "tag": "PIAR42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OCZ01",
+                    "orderNo": 6,
+                    "name": "Os. Czecha - 71",
+                    "tag": "OCZ71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ZIII01",
+                    "orderNo": 7,
+                    "name": "Żegrze III - 41",
+                    "tag": "ZIII41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "Z II01",
+                    "orderNo": 8,
+                    "name": "Żegrze II - 41",
+                    "tag": "Z II41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "Z I01",
+                    "orderNo": 9,
+                    "name": "Żegrze I - 41",
+                    "tag": "Z I41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RZEG43",
+                    "orderNo": 10,
+                    "name": "Rondo Żegrze - 43",
+                    "tag": "RZEG43",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RZEG01",
+                    "orderNo": 11,
+                    "name": "Rondo Żegrze - 41",
+                    "tag": "RZEG41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RSTA07",
+                    "orderNo": 12,
+                    "name": "Rondo Starołęka - 47",
+                    "tag": "RSTA47",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RSTA03",
+                    "orderNo": 13,
+                    "name": "Rondo Starołęka - 43",
+                    "tag": "RSTA43",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "HEWI01",
+                    "orderNo": 14,
+                    "name": "Hetmańska Wiadukt - 41",
+                    "tag": "HEWI41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROLN01",
+                    "orderNo": 15,
+                    "name": "Rolna - 41",
+                    "tag": "ROLN41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "TRAU03",
+                    "orderNo": 16,
+                    "name": "Traugutta - 43",
+                    "tag": "TRAU43",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PAMI92",
+                    "orderNo": 17,
+                    "name": "Pamiątkowa - 72",
+                    "tag": "PAMI72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "KOSI92",
+                    "orderNo": 18,
+                    "name": "Kosińskiego - 72",
+                    "tag": "KOSI72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RYWI72",
+                    "orderNo": 19,
+                    "name": "Rynek Wildecki - 72",
+                    "tag": "RYWI72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROZA02",
+                    "orderNo": 20,
+                    "name": "Różana - 42",
+                    "tag": "ROZA42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POLW02",
+                    "orderNo": 21,
+                    "name": "Półwiejska - 42",
+                    "tag": "POLW42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "AWF02",
+                    "orderNo": 22,
+                    "name": "AWF - 42",
+                    "tag": "AWF42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "LAKO02",
+                    "orderNo": 23,
+                    "name": "Łąkowa - 42",
+                    "tag": "LAKO42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PLWL02",
+                    "orderNo": 24,
+                    "name": "Pl. Wiosny Ludów - 42",
+                    "tag": "PLWL42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MRCI02",
+                    "orderNo": 25,
+                    "name": "Aleje Marcinkowskiego - 72",
+                    "tag": "MRCI72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PLWO01",
+                    "orderNo": 26,
+                    "name": "27 Grudnia - Teatr Polski - 72",
+                    "tag": "GRUD72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "FRRY02",
+                    "orderNo": 27,
+                    "name": "Fredry - 42",
+                    "tag": "FRRY42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MT04",
+                    "orderNo": 28,
+                    "name": "Most Teatralny - 44",
+                    "tag": "MT44",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POZN01",
+                    "orderNo": 29,
+                    "name": "Poznańska - 41",
+                    "tag": "POZN41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "WIKA01",
+                    "orderNo": 30,
+                    "name": "Wielkopolska - 41",
+                    "tag": "WIKA41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ARPO01",
+                    "orderNo": 31,
+                    "name": "Armii Poznań - 41",
+                    "tag": "ARPO41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ZNIW01",
+                    "orderNo": 32,
+                    "name": "Żniwna - 71",
+                    "tag": "ZNIW71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PASI01",
+                    "orderNo": 33,
+                    "name": "Pasieka - 41",
+                    "tag": "PASI41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MURA01",
+                    "orderNo": 34,
+                    "name": "Murawa - 41",
+                    "tag": "MURA41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OPL01",
+                    "orderNo": 35,
+                    "name": "Os. Pod Lipami - 41",
+                    "tag": "OPL41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROSO01",
+                    "orderNo": 36,
+                    "name": "Rondo Solidarności - 41",
+                    "tag": "ROSO41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POLA01",
+                    "orderNo": 37,
+                    "name": "Połabska - 41",
+                    "tag": "POLA41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "DEEC02",
+                    "orderNo": 1,
+                    "name": "Dębiec PKM - 42",
+                    "tag": "DEEC42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "WSPO02",
+                    "orderNo": 2,
+                    "name": "Wspólna - 42",
+                    "tag": "WSPO42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "HCP92",
+                    "orderNo": 3,
+                    "name": "HCP - 42",
+                    "tag": "HCP42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "TRAU92",
+                    "orderNo": 4,
+                    "name": "Traugutta - 42",
+                    "tag": "TRAU42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "GLHE04",
+                    "orderNo": 1,
+                    "name": "Głogowska/Hetmańska - 44",
+                    "tag": "GLHE44",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "KOLE02",
+                    "orderNo": 2,
+                    "name": "Kolejowa - 42",
+                    "tag": "KOLE42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "TRAU04",
+                    "orderNo": 3,
+                    "name": "Traugutta - 44",
+                    "tag": "TRAU44",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "GLHE92",
+                    "orderNo": 1,
+                    "name": "Głogowska/Hetmańska - 72",
+                    "tag": "GLHE72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RYLA92",
+                    "orderNo": 2,
+                    "name": "Rynek Łazarski - 72",
+                    "tag": "RYLA72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PAWI92",
+                    "orderNo": 3,
+                    "name": "Park Wilsona - 72",
+                    "tag": "PAWI72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "DWZA92",
+                    "orderNo": 4,
+                    "name": "Dworzec Zachodni - 72",
+                    "tag": "DWZA72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MODW02",
+                    "orderNo": 5,
+                    "name": "Most Dworcowy - 72",
+                    "tag": "MODW72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RKAP02",
+                    "orderNo": 6,
+                    "name": "Rondo Kaponiera - 72",
+                    "tag": "RKAP72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "KOLE01",
+                    "orderNo": 5,
+                    "name": "Kolejowa - 41",
+                    "tag": "KOLE41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "GLHE03",
+                    "orderNo": 6,
+                    "name": "Głogowska/Hetmańska - 43",
+                    "tag": "GLHE43",
+                    "mainBollard": false
+                }
+            ],
+            "direction": {
+                "unnecessary": "param",
+                "returnVariant": false,
+                "2+2 = ": 5.00000000000001,
+                "lineName": "19",
+                "direction": "Połabska"
+            }
+        },
+        {
+            "bollards": [
+                {
+                    "symbol": "POLA02",
+                    "orderNo": 1,
+                    "name": "Połabska - 42",
+                    "tag": "POLA42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROSO02",
+                    "orderNo": 2,
+                    "name": "Rondo Solidarności - 42",
+                    "tag": "ROSO42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OPL02",
+                    "orderNo": 3,
+                    "name": "Os. Pod Lipami - 42",
+                    "tag": "OPL42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MURA02",
+                    "orderNo": 4,
+                    "name": "Murawa - 42",
+                    "tag": "MURA42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PASI02",
+                    "orderNo": 5,
+                    "name": "Pasieka - 42",
+                    "tag": "PASI42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ZNIW02",
+                    "orderNo": 6,
+                    "name": "Żniwna - 42",
+                    "tag": "ZNIW42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ARPO02",
+                    "orderNo": 7,
+                    "name": "Armii Poznań - 42",
+                    "tag": "ARPO42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "WIKA02",
+                    "orderNo": 8,
+                    "name": "Wielkopolska - 42",
+                    "tag": "WIKA42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POZN02",
+                    "orderNo": 9,
+                    "name": "Poznańska - 42",
+                    "tag": "POZN42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MT03",
+                    "orderNo": 10,
+                    "name": "Most Teatralny - 73",
+                    "tag": "MT73",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "FRRY01",
+                    "orderNo": 11,
+                    "name": "Fredry - 41",
+                    "tag": "FRRY41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "GWAR01",
+                    "orderNo": 12,
+                    "name": "Gwarna - 71",
+                    "tag": "GWAR71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RATA02",
+                    "orderNo": 13,
+                    "name": "Święty Marcin - 71",
+                    "tag": "SWMN71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MRCI01",
+                    "orderNo": 14,
+                    "name": "Aleje Marcinkowskiego - 71",
+                    "tag": "MRCI71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PLWL01",
+                    "orderNo": 15,
+                    "name": "Pl. Wiosny Ludów - 41",
+                    "tag": "PLWL41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "LAKO01",
+                    "orderNo": 16,
+                    "name": "Łąkowa - 41",
+                    "tag": "LAKO41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "AWF01",
+                    "orderNo": 17,
+                    "name": "AWF - 41",
+                    "tag": "AWF41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POLW01",
+                    "orderNo": 18,
+                    "name": "Półwiejska - 41",
+                    "tag": "POLW41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROZA01",
+                    "orderNo": 19,
+                    "name": "Różana - 41",
+                    "tag": "ROZA41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RYWI71",
+                    "orderNo": 20,
+                    "name": "Rynek Wildecki - 71",
+                    "tag": "RYWI71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "KOSI91",
+                    "orderNo": 21,
+                    "name": "Kosińskiego - 71",
+                    "tag": "KOSI71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PAMI91",
+                    "orderNo": 22,
+                    "name": "Pamiątkowa - 71",
+                    "tag": "PAMI71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "TRAU91",
+                    "orderNo": 23,
+                    "name": "Traugutta - 41",
+                    "tag": "TRAU41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "HCP91",
+                    "orderNo": 24,
+                    "name": "HCP - 41",
+                    "tag": "HCP41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "WSPO91",
+                    "orderNo": 25,
+                    "name": "Wspólna - 41",
+                    "tag": "WSPO41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "DEEC01",
+                    "orderNo": 26,
+                    "name": "Dębiec PKM - 41",
+                    "tag": "DEEC41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROLN02",
+                    "orderNo": 23,
+                    "name": "Rolna - 42",
+                    "tag": "ROLN42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "HEWI02",
+                    "orderNo": 24,
+                    "name": "Hetmańska Wiadukt - 42",
+                    "tag": "HEWI42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RSTA04",
+                    "orderNo": 25,
+                    "name": "Rondo Starołęka - 44",
+                    "tag": "RSTA44",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RSTA08",
+                    "orderNo": 26,
+                    "name": "Rondo Starołęka - 48",
+                    "tag": "RSTA48",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RZEG02",
+                    "orderNo": 27,
+                    "name": "Rondo Żegrze - 42",
+                    "tag": "RZEG42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RZEG44",
+                    "orderNo": 28,
+                    "name": "Rondo Żegrze - 44",
+                    "tag": "RZEG44",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "Z I02",
+                    "orderNo": 29,
+                    "name": "Żegrze I - 42",
+                    "tag": "Z I42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "Z II02",
+                    "orderNo": 30,
+                    "name": "Żegrze II - 42",
+                    "tag": "Z II42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ZIII02",
+                    "orderNo": 31,
+                    "name": "Żegrze III - 42",
+                    "tag": "ZIII42",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OCZ02",
+                    "orderNo": 32,
+                    "name": "Os. Czecha - 72",
+                    "tag": "OCZ72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PIAR01",
+                    "orderNo": 33,
+                    "name": "Piaśnicka Rynek - 41",
+                    "tag": "PIAR41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "P K01",
+                    "orderNo": 34,
+                    "name": "Piaśnicka/Kurlandzka - 41",
+                    "tag": "PK41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "SZWE01",
+                    "orderNo": 35,
+                    "name": "Szwedzka - 41",
+                    "tag": "SZWE41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "SZWA01",
+                    "orderNo": 36,
+                    "name": "Szwajcarska - 41",
+                    "tag": "SZWA41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "FRWO01",
+                    "orderNo": 37,
+                    "name": "Franowo - 41",
+                    "tag": "FRWO41",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MT01",
+                    "orderNo": 10,
+                    "name": "Most Teatralny - 71",
+                    "tag": "MT71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RKAP01",
+                    "orderNo": 11,
+                    "name": "Rondo Kaponiera - 71",
+                    "tag": "RKAP71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MODW01",
+                    "orderNo": 12,
+                    "name": "Most Dworcowy - 71",
+                    "tag": "MODW71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "DWZA91",
+                    "orderNo": 13,
+                    "name": "Dworzec Zachodni - 71",
+                    "tag": "DWZA71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PAWI91",
+                    "orderNo": 14,
+                    "name": "Park Wilsona - 71",
+                    "tag": "PAWI71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "RYLA91",
+                    "orderNo": 15,
+                    "name": "Rynek Łazarski - 71",
+                    "tag": "RYLA71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "GLHE01",
+                    "orderNo": 16,
+                    "name": "Głogowska/Hetmańska - 71",
+                    "tag": "GLHE71",
+                    "mainBollard": false
+                }
+            ],
+            "direction": {
+                "returnVariant": true,
+                "lineName": "19",
+                "direction": "Dębiec PKM"
+            }
+        }
+    ]
+}

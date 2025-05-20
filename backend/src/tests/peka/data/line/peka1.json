@@ -1,0 +1,435 @@
+{
+    "directions": [
+        {
+            "bollards": [
+                {
+                    "symbol": "POLO21",
+                    "orderNo": 1,
+                    "name": "Urząd Marszałkowski - 01",
+                    "tag": "URMA01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ARPO21",
+                    "orderNo": 2,
+                    "name": "Armii Poznań - 01",
+                    "tag": "ARPO01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "SLKA21",
+                    "orderNo": 3,
+                    "name": "Słowiańska - 01",
+                    "tag": "SLKA01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "KSMI91",
+                    "orderNo": 4,
+                    "name": "Księcia Mieszka I - 01",
+                    "tag": "KSMI01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "WYLO22",
+                    "orderNo": 5,
+                    "name": "Wyłom - 01",
+                    "tag": "WYLO01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OSZW21",
+                    "orderNo": 6,
+                    "name": "Os. Zwycięstwa - 02",
+                    "tag": "OSZW02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POLA23",
+                    "orderNo": 7,
+                    "name": "Połabska - 02",
+                    "tag": "POLA02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROSO21",
+                    "orderNo": 8,
+                    "name": "Rondo Solidarności - 01",
+                    "tag": "ROSO01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OKOS21",
+                    "orderNo": 9,
+                    "name": "Os. Kosmonautów - 01",
+                    "tag": "OKOS01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OWW21",
+                    "orderNo": 10,
+                    "name": "Os. Wichrowe Wzgórze - 01",
+                    "tag": "OWW01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OSDE22",
+                    "orderNo": 1,
+                    "name": "Os. Dębina - 02",
+                    "tag": "OSDE02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "AZAL22",
+                    "orderNo": 2,
+                    "name": "Azaliowa - 02",
+                    "tag": "AZAL02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "LOZO22",
+                    "orderNo": 3,
+                    "name": "Łozowa - 02",
+                    "tag": "LOZO02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "LOZO21",
+                    "orderNo": 4,
+                    "name": "Malinowa - 01",
+                    "tag": "MALI01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "DOWI22",
+                    "orderNo": 5,
+                    "name": "Dolna Wilda - 02",
+                    "tag": "DOWI02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PINZ22",
+                    "orderNo": 6,
+                    "name": "Piastowska - 04",
+                    "tag": "PINZ04",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "WSNZ22",
+                    "orderNo": 7,
+                    "name": "Tokarska - 04",
+                    "tag": "TOKA04",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "IPNZ22",
+                    "orderNo": 8,
+                    "name": "IPN - 02",
+                    "tag": "IPNZ02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROLN24",
+                    "orderNo": 9,
+                    "name": "Rolna - 02",
+                    "tag": "ROLN02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PAMI92",
+                    "orderNo": 10,
+                    "name": "Pamiątkowa - 72",
+                    "tag": "PAMI72",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROBO22",
+                    "orderNo": 11,
+                    "name": "Robocza - 02",
+                    "tag": "ROBO02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ZNTK22",
+                    "orderNo": 12,
+                    "name": "ZNTK - 02",
+                    "tag": "ZNTK02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "BERG22",
+                    "orderNo": 13,
+                    "name": "Bergera - 02",
+                    "tag": "BERG02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "NIED22",
+                    "orderNo": 14,
+                    "name": "Niedziałkowskiego - 02",
+                    "tag": "NIED02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POGL98",
+                    "orderNo": 15,
+                    "name": "Poznań Główny - 06",
+                    "tag": "POGL06",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POGL04",
+                    "orderNo": 16,
+                    "name": "Poznań Główny - 74",
+                    "tag": "POGL74",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "UE03",
+                    "orderNo": 17,
+                    "name": "Uniwersytet Ekonomiczny - 01",
+                    "tag": "UE01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ZAME21",
+                    "orderNo": 18,
+                    "name": "Zamek - 01",
+                    "tag": "ZAME01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "URWO21",
+                    "orderNo": 19,
+                    "name": "Urząd Wojewódzki - 01",
+                    "tag": "URWO01",
+                    "mainBollard": false
+                }
+            ],
+            "direction": {
+                "returnVariant": true,
+                "lineName": "171",
+                "direction": "Os. Wichrowe Wzgórze"
+            }
+        },
+        {
+            "bollards": [
+                {
+                    "symbol": "OWW22",
+                    "orderNo": 1,
+                    "name": "Os. Wichrowe Wzgórze - 02",
+                    "tag": "OWW02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OKOS22",
+                    "orderNo": 2,
+                    "name": "Os. Kosmonautów - 02",
+                    "tag": "OKOS02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROSO24",
+                    "orderNo": 3,
+                    "name": "Rondo Solidarności - 03",
+                    "tag": "ROSO03",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POLA22",
+                    "orderNo": 4,
+                    "name": "Połabska - 01",
+                    "tag": "POLA01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OSZW22",
+                    "orderNo": 5,
+                    "name": "Os. Zwycięstwa - 01",
+                    "tag": "OSZW01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ALSO22",
+                    "orderNo": 6,
+                    "name": "Aleje Solidarności - 04",
+                    "tag": "ALSO04",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "WYLO21",
+                    "orderNo": 7,
+                    "name": "Wyłom - 02",
+                    "tag": "WYLO02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "KSMI21",
+                    "orderNo": 8,
+                    "name": "Księcia Mieszka I - 02",
+                    "tag": "KSMI02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "SLKA22",
+                    "orderNo": 9,
+                    "name": "Słowiańska - 02",
+                    "tag": "SLKA02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "URBA21",
+                    "orderNo": 10,
+                    "name": "Urbanowska - 02",
+                    "tag": "URBA02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PRNZ22",
+                    "orderNo": 11,
+                    "name": "Przepadek - 04",
+                    "tag": "PRNZ04",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POLO22",
+                    "orderNo": 12,
+                    "name": "Urząd Marszałkowski - 02",
+                    "tag": "URMA02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "LIBE22",
+                    "orderNo": 13,
+                    "name": "Libelta - 02",
+                    "tag": "LIBE02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ZAME22",
+                    "orderNo": 14,
+                    "name": "Zamek - 02",
+                    "tag": "ZAME02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "TO I01",
+                    "orderNo": 15,
+                    "name": "Uniwersytet Ekonomiczny - 71",
+                    "tag": "UE71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POGL03",
+                    "orderNo": 16,
+                    "name": "Poznań Główny - 73",
+                    "tag": "POGL73",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "POGL23",
+                    "orderNo": 17,
+                    "name": "Poznań Główny - 05",
+                    "tag": "POGL05",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "NIED23",
+                    "orderNo": 18,
+                    "name": "Niedziałkowskiego - 01",
+                    "tag": "NIED01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "BERG21",
+                    "orderNo": 19,
+                    "name": "Bergera - 01",
+                    "tag": "BERG01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ZNTK21",
+                    "orderNo": 20,
+                    "name": "ZNTK - 01",
+                    "tag": "ZNTK01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROBO21",
+                    "orderNo": 21,
+                    "name": "Robocza - 01",
+                    "tag": "ROBO01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "PAMI91",
+                    "orderNo": 22,
+                    "name": "Pamiątkowa - 71",
+                    "tag": "PAMI71",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "ROLN23",
+                    "orderNo": 23,
+                    "name": "Rolna - 01",
+                    "tag": "ROLN01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "IPNZ21",
+                    "orderNo": 24,
+                    "name": "IPN - 01",
+                    "tag": "IPNZ01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "WSNZ21",
+                    "orderNo": 25,
+                    "name": "Tokarska - 01",
+                    "tag": "TOKA01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "DOWI21",
+                    "orderNo": 26,
+                    "name": "Piastowska - 01",
+                    "tag": "PINZ01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "MALI02",
+                    "orderNo": 27,
+                    "name": "Malinowa - 02",
+                    "tag": "MALI02",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "LOZO91",
+                    "orderNo": 28,
+                    "name": "Łozowa - 01",
+                    "tag": "LOZO01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "AZAL21",
+                    "orderNo": 29,
+                    "name": "Azaliowa - 01",
+                    "tag": "AZAL01",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "OSDE21",
+                    "orderNo": 30,
+                    "name": "Os. Dębina - 01",
+                    "tag": "OSDE01",
+                    "mainBollard": false
+                }
+            ],
+            "direction": {
+                "returnVariant": false,
+                "lineName": "171",
+                "direction": "Os. Dębina"
+            }
+        }
+    ]
+}
