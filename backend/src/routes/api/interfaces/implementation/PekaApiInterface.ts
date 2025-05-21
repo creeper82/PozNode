@@ -6,10 +6,10 @@ import ApiInterface from "../ApiInterface";
 import { convertBollardsResponse, convertDeparturesResponse, convertLinesResponse, convertLineStopsResponse, convertStopsResponse } from "./converters";
 import pekaRequest from "./pekaRequest";
 
-type FetchRequestHandlerType = <ResultType>(method: string, params: Record<string, any>) => Promise<ResultType>;
+export type FetchRequestHandlerType = <ResultType>(method: string, params: Record<string, any>) => Promise<ResultType>;
 
 /** Implementation of the interface, used to retrieve information from the PEKA Virtual Monitor API. */
-class PekaApiInterface implements ApiInterface {
+export class PekaApiInterface implements ApiInterface {
     /** Sends a request to the PEKA Virtual Monitor API. If successful, returns the content inside the success property. Otherwise, throws an error. */
     fetchRequestHandler: FetchRequestHandlerType;
 
