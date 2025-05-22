@@ -26,6 +26,7 @@ export default function LiveDeparturesCard({ symbol, intervalSec }: { symbol: st
 
         const interval = setInterval(updateData, intervalSec * 1000);
 
+        setResponse(undefined);
         updateData();
 
         return () => { clearInterval(interval); };
