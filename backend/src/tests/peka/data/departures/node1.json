@@ -1,0 +1,33 @@
+{
+    "bollardName": "AWF",
+    "bollardSymbol": "AWF01",
+    "announcements": [],
+    "departures": [
+        {
+            "line": "176",
+            "direction": "Os. Dębina",
+            "departure": "15:46",
+            "minutes": 10,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "1481",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": true,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "603",
+            "direction": "Łęczyca/Dworcowa",
+            "departure": "16:06",
+            "minutes": 30,
+            "realTime": false,
+            "onStopPoint": false
+        }
+    ]
+}

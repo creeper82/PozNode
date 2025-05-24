@@ -1,0 +1,78 @@
+{
+    "times": [
+        {
+            "lfRamp": false,
+            "line": "10",
+            "minutes": 3,
+            "ticketMachine": false,
+            "leRamp": true,
+            "airCnd": true,
+            "vehicle": "914",
+            "bike": true,
+            "realTime": true,
+            "onStopPoint": false,
+            "charger": true,
+            "lowEntranceBus": false,
+            "lowFloorBus": false,
+            "departure": "2025-05-24T15:50:00.000Z",
+            "direction": "Błażeja"
+        },
+        {
+            "lfRamp": false,
+            "line": "9",
+            "minutes": 10,
+            "ticketMachine": false,
+            "leRamp": true,
+            "airCnd": true,
+            "vehicle": "911",
+            "bike": true,
+            "realTime": true,
+            "onStopPoint": false,
+            "charger": true,
+            "lowEntranceBus": false,
+            "lowFloorBus": false,
+            "departure": "2025-05-24T15:57:00.000Z",
+            "direction": "Piątkowska"
+        },
+        {
+            "lfRamp": false,
+            "line": "2",
+            "minutes": 13,
+            "ticketMachine": false,
+            "leRamp": false,
+            "airCnd": false,
+            "vehicle": "509",
+            "bike": true,
+            "realTime": true,
+            "onStopPoint": false,
+            "charger": false,
+            "lowEntranceBus": false,
+            "lowFloorBus": true,
+            "departure": "2025-05-24T16:00:00.000Z",
+            "direction": "Ogrody"
+        },
+        {
+            "lfRamp": false,
+            "line": "10",
+            "minutes": 23,
+            "ticketMachine": false,
+            "leRamp": true,
+            "airCnd": true,
+            "vehicle": "915",
+            "bike": true,
+            "realTime": true,
+            "onStopPoint": false,
+            "charger": true,
+            "lowEntranceBus": false,
+            "lowFloorBus": false,
+            "departure": "2025-05-24T16:10:00.000Z",
+            "direction": "Błażeja"
+        }
+    ],
+    "bollard": {
+        "symbol": "RYWI72",
+        "name": "Rynek Wildecki",
+        "tag": "RYWI72",
+        "mainBollard": false
+    }
+}
