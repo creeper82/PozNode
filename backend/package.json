@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "prod": "tsc && node dist/index.js"
   },
-  "type": "module",
   "author": "creeper82",
   "license": "MIT",
   "dependencies": {
