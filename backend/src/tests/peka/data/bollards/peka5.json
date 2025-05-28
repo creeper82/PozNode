@@ -1,0 +1,120 @@
+{
+    "bollard": {
+        "does not": "matter!",
+        "2+2" : 5
+    },
+    "bollards": [
+        {
+            "undirections": false,
+            "directions": [
+                {
+                    "Git": ["Hub", "Lab"],
+                    "returnVariant": false,
+                    "lineName": "182",
+                    "direction": "Górczyn PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "193",
+                    "direction": "Górczyn PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "193",
+                    "direction": "Jawornicka"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "835",
+                    "direction": "Ogrody"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "836",
+                    "direction": "Ogrody"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "837",
+                    "direction": "Ogrody"
+                }
+            ],
+            "bollard": {
+                "symbol": "NIES22",
+                "name": "Niestachowska nż.",
+                "tag": "NIES02",
+                "mainBollard": false
+            }
+        },
+        {
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineName": "182",
+                    "direction": "Os. Wichrowe Wzgórze"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "193",
+                    "direction": "Os. Sobieskiego"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "835",
+                    "direction": "Kiekrz"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "835",
+                    "direction": "Rokietnica/Węzeł Przesiadkowy"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "836",
+                    "direction": "Kobylniki/Tarnowska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "837",
+                    "direction": "Pawłowice/Pętla"
+                }
+            ],
+            "bollard": {
+                "symbol": "NIES21",
+                "name": "Niestachowska nż.",
+                "tag": "NIES01",
+                "mainBollard": false
+            }
+        },
+        {
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineName": "191",
+                    "direction": "Os. Sobieskiego"
+                }
+            ],
+            "bollard": {
+                "symbol": "NIES04",
+                "name": "Niestachowska nż.",
+                "tag": "NIES04",
+                "mainBollard": false
+            }
+        },
+        {
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineName": "191",
+                    "direction": "Os. Kopernika"
+                }
+            ],
+            "bollard": {
+                "symbol": "NIES03",
+                "name": "Niestachowska nż.",
+                "tag": "NIES03",
+                "mainBollard": false
+            }
+        }
+    ]
+}

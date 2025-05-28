@@ -1,0 +1,51 @@
+{
+    "bollardName": "Biedrusko/Park",
+    "bollardSymbol": "BIPRK02",
+    "announcements": [],
+    "departures": [
+        {
+            "line": "911",
+            "direction": "Rondo Śródka",
+            "departure": "16:05",
+            "minutes": 15,
+            "realTime": false,
+            "onStopPoint": false
+        },
+        {
+            "line": "911",
+            "direction": "Biedrusko/Park",
+            "departure": "16:06",
+            "minutes": 16,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "1868",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "348",
+            "direction": "Os. Sobieskiego",
+            "departure": "16:09",
+            "minutes": 19,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "1891",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        }
+    ]
+}

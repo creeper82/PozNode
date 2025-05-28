@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Biedrusko/Park",
+        "symbol": "BIPRK02",
+        "directions": [
+            {
+                "lineName": "348",
+                "direction": "Przebędowo/Pętla"
+            },
+            {
+                "lineName": "348",
+                "direction": "Os. Sobieskiego"
+            },
+            {
+                "lineName": "397",
+                "direction": "Potasze/Jodłowa"
+            },
+            {
+                "lineName": "397",
+                "direction": "Biedrusko/Park"
+            },
+            {
+                "lineName": "397",
+                "direction": "Bolechowo-Os./PKM"
+            },
+            {
+                "lineName": "397",
+                "direction": "Trzaskowo/Wieś"
+            },
+            {
+                "lineName": "911",
+                "direction": "Rondo Śródka"
+            },
+            {
+                "lineName": "911",
+                "direction": "Biedrusko/Park"
+            }
+        ]
+    }
+]

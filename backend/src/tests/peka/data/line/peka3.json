@@ -1,0 +1,50 @@
+{
+    "directions": [
+        {
+            "bollards": [
+                {
+                    "symbol": "30585",
+                    "orderNo": 1,
+                    "name": "PKM/Poznań Dębiec - 80",
+                    "tag": "PKMPDE80",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "30601",
+                    "orderNo": 2,
+                    "name": "PKM/Poznań Główny - 80",
+                    "tag": "PKMPGL80",
+                    "mainBollard": false
+                }
+            ],
+            "direction": {
+                "returnVariant": false,
+                "lineName": "PKM1",
+                "direction": "PKM/Poznań Główny"
+            }
+        },
+        {
+            "bollards": [
+                {
+                    "symbol": "30585",
+                    "orderNo": 1,
+                    "name": "PKM/Poznań Dębiec - 80",
+                    "tag": "PKMPDE80",
+                    "mainBollard": false
+                },
+                {
+                    "symbol": "30403",
+                    "orderNo": 2,
+                    "name": "PKM/Luboń k/Poznania - 80",
+                    "tag": "PKMLUB80",
+                    "mainBollard": false
+                }
+            ],
+            "direction": {
+                "returnVariant": true,
+                "lineName": "PKM1",
+                "direction": "PKM/Luboń k/Poznania"
+            }
+        }
+    ]
+}

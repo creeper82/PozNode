@@ -1,0 +1,131 @@
+{
+    "bollards": [
+        {
+            "directions": [
+                {
+                    "returnVariant": false,
+                    "lineName": "2",
+                    "direction": "Ogrody",
+                    "pointlessAttribute": [69, 1, 2, 3]
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "3",
+                    "direction": "Błażeja"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "5",
+                    "direction": "Górczyn PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "5",
+                    "direction": "Głogowska/Hetmańska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "6",
+                    "direction": "Budziszyńska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "6",
+                    "direction": "Franowo"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "6",
+                    "direction": "Starołęka PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "9",
+                    "direction": "Dębiec PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "9",
+                    "direction": "Piątkowska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "10",
+                    "direction": "Dębiec PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "11",
+                    "direction": "Unii Lubelskiej"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "12",
+                    "direction": "Os. Sobieskiego"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "13",
+                    "direction": "Junikowo"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "14",
+                    "direction": "Górczyn PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "15",
+                    "direction": "Junikowo"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "15",
+                    "direction": "Os. Sobieskiego"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "16",
+                    "direction": "Os. Sobieskiego"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "18",
+                    "direction": "Franowo"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "18",
+                    "direction": "Starołęka PKM"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "18",
+                    "direction": "Ogrody"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "18",
+                    "direction": "Głogowska/Hetmańska"
+                },
+                {
+                    "returnVariant": false,
+                    "lineName": "19",
+                    "direction": "Połabska"
+                }
+            ],
+            "bollard": {
+                "symbol": "PLWO01",
+                "name": "27 Grudnia - Teatr Polski",
+                "tag": "GRUD72",
+                "mainBollard": false
+            }
+        }
+    ],
+    "useless": [
+        "this is not needed",
+        {
+            "a": "b"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "bollardName": "Rynek Wildecki",
+    "bollardSymbol": "RYWI72",
+    "announcements": [],
+    "departures": [
+        {
+            "line": "10",
+            "direction": "Błażeja",
+            "departure": "15:50",
+            "minutes": 3,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "914",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": true,
+                "lowEntrance": true,
+                "lowFloor": false,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "9",
+            "direction": "Piątkowska",
+            "departure": "15:57",
+            "minutes": 10,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "911",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": true,
+                "lowEntrance": true,
+                "lowFloor": false,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "2",
+            "direction": "Ogrody",
+            "departure": "16",
+            "minutes": 13,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "509",
+                "airConditioned": false,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": false,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "10",
+            "direction": "Błażeja",
+            "departure": "16:10",
+            "minutes": 23,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "915",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": true,
+                "lowEntrance": true,
+                "lowFloor": false,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        }
+    ]
+}

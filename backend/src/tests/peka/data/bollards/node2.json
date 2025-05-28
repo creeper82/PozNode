@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Rynek Wildecki",
+        "symbol": "RYWI72",
+        "directions": [
+            {
+                "lineName": "2",
+                "direction": "Franowo"
+            },
+            {
+                "lineName": "2",
+                "direction": "Ogrody"
+            },
+            {
+                "lineName": "6",
+                "direction": "Budziszyńska"
+            },
+            {
+                "lineName": "9",
+                "direction": "Piątkowska"
+            },
+            {
+                "lineName": "10",
+                "direction": "Franowo"
+            },
+            {
+                "lineName": "10",
+                "direction": "Błażeja"
+            },
+            {
+                "lineName": "19",
+                "direction": "Połabska"
+            },
+            {
+                "lineName": "215",
+                "direction": "Rondo Kaponiera"
+            },
+            {
+                "lineName": "215",
+                "direction": "Os. Sobieskiego"
+            }
+        ]
+    },
+    {
+        "name": "Rynek Wildecki",
+        "symbol": "RYWI71",
+        "directions": [
+            {
+                "lineName": "2",
+                "direction": "Dębiec PKM"
+            },
+            {
+                "lineName": "9",
+                "direction": "Dębiec PKM"
+            },
+            {
+                "lineName": "9",
+                "direction": "Głogowska/Hetmańska"
+            },
+            {
+                "lineName": "10",
+                "direction": "Dębiec PKM"
+            },
+            {
+                "lineName": "10",
+                "direction": "Franowo"
+            },
+            {
+                "lineName": "19",
+                "direction": "Dębiec PKM"
+            },
+            {
+                "lineName": "19",
+                "direction": "Franowo"
+            },
+            {
+                "lineName": "215",
+                "direction": "Os. Dębina"
+            },
+            {
+                "lineName": "215",
+                "direction": "Luboń/Kręta"
+            }
+        ]
+    }
+]

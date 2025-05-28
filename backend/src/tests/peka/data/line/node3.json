@@ -1,0 +1,32 @@
+[
+    {
+        "direction": "PKM/Poznań Główny",
+        "bollards": [
+            {
+                "name": "PKM/Poznań Dębiec",
+                "symbol": "PKMPDE80",
+                "orderNo": 1
+            },
+            {
+                "name": "PKM/Poznań Główny",
+                "symbol": "PKMPGL80",
+                "orderNo": 2
+            }
+        ]
+    },
+    {
+        "direction": "PKM/Luboń k/Poznania",
+        "bollards": [
+            {
+                "name": "PKM/Poznań Dębiec",
+                "symbol": "PKMPDE80",
+                "orderNo": 1
+            },
+            {
+                "name": "PKM/Luboń k/Poznania",
+                "symbol": "PKMLUB80",
+                "orderNo": 2
+            }
+        ]
+    }
+]

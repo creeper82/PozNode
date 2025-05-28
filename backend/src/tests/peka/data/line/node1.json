@@ -1,0 +1,307 @@
+[
+    {
+        "direction": "Os. Wichrowe Wzgórze",
+        "bollards": [
+            {
+                "name": "Urząd Marszałkowski",
+                "symbol": "URMA01",
+                "orderNo": 1
+            },
+            {
+                "name": "Armii Poznań",
+                "symbol": "ARPO01",
+                "orderNo": 2
+            },
+            {
+                "name": "Słowiańska",
+                "symbol": "SLKA01",
+                "orderNo": 3
+            },
+            {
+                "name": "Księcia Mieszka I",
+                "symbol": "KSMI01",
+                "orderNo": 4
+            },
+            {
+                "name": "Wyłom",
+                "symbol": "WYLO01",
+                "orderNo": 5
+            },
+            {
+                "name": "Os. Zwycięstwa",
+                "symbol": "OSZW02",
+                "orderNo": 6
+            },
+            {
+                "name": "Połabska",
+                "symbol": "POLA02",
+                "orderNo": 7
+            },
+            {
+                "name": "Rondo Solidarności",
+                "symbol": "ROSO01",
+                "orderNo": 8
+            },
+            {
+                "name": "Os. Kosmonautów",
+                "symbol": "OKOS01",
+                "orderNo": 9
+            },
+            {
+                "name": "Os. Wichrowe Wzgórze",
+                "symbol": "OWW01",
+                "orderNo": 10
+            },
+            {
+                "name": "Os. Dębina",
+                "symbol": "OSDE02",
+                "orderNo": 1
+            },
+            {
+                "name": "Azaliowa",
+                "symbol": "AZAL02",
+                "orderNo": 2
+            },
+            {
+                "name": "Łozowa",
+                "symbol": "LOZO02",
+                "orderNo": 3
+            },
+            {
+                "name": "Malinowa",
+                "symbol": "MALI01",
+                "orderNo": 4
+            },
+            {
+                "name": "Dolna Wilda",
+                "symbol": "DOWI02",
+                "orderNo": 5
+            },
+            {
+                "name": "Piastowska",
+                "symbol": "PINZ04",
+                "orderNo": 6
+            },
+            {
+                "name": "Tokarska",
+                "symbol": "TOKA04",
+                "orderNo": 7
+            },
+            {
+                "name": "IPN",
+                "symbol": "IPNZ02",
+                "orderNo": 8
+            },
+            {
+                "name": "Rolna",
+                "symbol": "ROLN02",
+                "orderNo": 9
+            },
+            {
+                "name": "Pamiątkowa",
+                "symbol": "PAMI72",
+                "orderNo": 10
+            },
+            {
+                "name": "Robocza",
+                "symbol": "ROBO02",
+                "orderNo": 11
+            },
+            {
+                "name": "ZNTK",
+                "symbol": "ZNTK02",
+                "orderNo": 12
+            },
+            {
+                "name": "Bergera",
+                "symbol": "BERG02",
+                "orderNo": 13
+            },
+            {
+                "name": "Niedziałkowskiego",
+                "symbol": "NIED02",
+                "orderNo": 14
+            },
+            {
+                "name": "Poznań Główny",
+                "symbol": "POGL06",
+                "orderNo": 15
+            },
+            {
+                "name": "Poznań Główny",
+                "symbol": "POGL74",
+                "orderNo": 16
+            },
+            {
+                "name": "Uniwersytet Ekonomiczny",
+                "symbol": "UE01",
+                "orderNo": 17
+            },
+            {
+                "name": "Zamek",
+                "symbol": "ZAME01",
+                "orderNo": 18
+            },
+            {
+                "name": "Urząd Wojewódzki",
+                "symbol": "URWO01",
+                "orderNo": 19
+            }
+        ]
+    },
+    {
+        "direction": "Os. Dębina",
+        "bollards": [
+            {
+                "name": "Os. Wichrowe Wzgórze",
+                "symbol": "OWW02",
+                "orderNo": 1
+            },
+            {
+                "name": "Os. Kosmonautów",
+                "symbol": "OKOS02",
+                "orderNo": 2
+            },
+            {
+                "name": "Rondo Solidarności",
+                "symbol": "ROSO03",
+                "orderNo": 3
+            },
+            {
+                "name": "Połabska",
+                "symbol": "POLA01",
+                "orderNo": 4
+            },
+            {
+                "name": "Os. Zwycięstwa",
+                "symbol": "OSZW01",
+                "orderNo": 5
+            },
+            {
+                "name": "Aleje Solidarności",
+                "symbol": "ALSO04",
+                "orderNo": 6
+            },
+            {
+                "name": "Wyłom",
+                "symbol": "WYLO02",
+                "orderNo": 7
+            },
+            {
+                "name": "Księcia Mieszka I",
+                "symbol": "KSMI02",
+                "orderNo": 8
+            },
+            {
+                "name": "Słowiańska",
+                "symbol": "SLKA02",
+                "orderNo": 9
+            },
+            {
+                "name": "Urbanowska",
+                "symbol": "URBA02",
+                "orderNo": 10
+            },
+            {
+                "name": "Przepadek",
+                "symbol": "PRNZ04",
+                "orderNo": 11
+            },
+            {
+                "name": "Urząd Marszałkowski",
+                "symbol": "URMA02",
+                "orderNo": 12
+            },
+            {
+                "name": "Libelta",
+                "symbol": "LIBE02",
+                "orderNo": 13
+            },
+            {
+                "name": "Zamek",
+                "symbol": "ZAME02",
+                "orderNo": 14
+            },
+            {
+                "name": "Uniwersytet Ekonomiczny",
+                "symbol": "UE71",
+                "orderNo": 15
+            },
+            {
+                "name": "Poznań Główny",
+                "symbol": "POGL73",
+                "orderNo": 16
+            },
+            {
+                "name": "Poznań Główny",
+                "symbol": "POGL05",
+                "orderNo": 17
+            },
+            {
+                "name": "Niedziałkowskiego",
+                "symbol": "NIED01",
+                "orderNo": 18
+            },
+            {
+                "name": "Bergera",
+                "symbol": "BERG01",
+                "orderNo": 19
+            },
+            {
+                "name": "ZNTK",
+                "symbol": "ZNTK01",
+                "orderNo": 20
+            },
+            {
+                "name": "Robocza",
+                "symbol": "ROBO01",
+                "orderNo": 21
+            },
+            {
+                "name": "Pamiątkowa",
+                "symbol": "PAMI71",
+                "orderNo": 22
+            },
+            {
+                "name": "Rolna",
+                "symbol": "ROLN01",
+                "orderNo": 23
+            },
+            {
+                "name": "IPN",
+                "symbol": "IPNZ01",
+                "orderNo": 24
+            },
+            {
+                "name": "Tokarska",
+                "symbol": "TOKA01",
+                "orderNo": 25
+            },
+            {
+                "name": "Piastowska",
+                "symbol": "PINZ01",
+                "orderNo": 26
+            },
+            {
+                "name": "Malinowa",
+                "symbol": "MALI02",
+                "orderNo": 27
+            },
+            {
+                "name": "Łozowa",
+                "symbol": "LOZO01",
+                "orderNo": 28
+            },
+            {
+                "name": "Azaliowa",
+                "symbol": "AZAL01",
+                "orderNo": 29
+            },
+            {
+                "name": "Os. Dębina",
+                "symbol": "OSDE01",
+                "orderNo": 30
+            }
+        ]
+    }
+]

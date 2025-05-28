@@ -1,0 +1,96 @@
+[
+    {
+        "name": "27 Grudnia - Teatr Polski",
+        "symbol": "GRUD72",
+        "directions": [
+            {
+                "lineName": "2",
+                "direction": "Ogrody"
+            },
+            {
+                "lineName": "3",
+                "direction": "Błażeja"
+            },
+            {
+                "lineName": "5",
+                "direction": "Górczyn PKM"
+            },
+            {
+                "lineName": "5",
+                "direction": "Głogowska/Hetmańska"
+            },
+            {
+                "lineName": "6",
+                "direction": "Budziszyńska"
+            },
+            {
+                "lineName": "6",
+                "direction": "Franowo"
+            },
+            {
+                "lineName": "6",
+                "direction": "Starołęka PKM"
+            },
+            {
+                "lineName": "9",
+                "direction": "Dębiec PKM"
+            },
+            {
+                "lineName": "9",
+                "direction": "Piątkowska"
+            },
+            {
+                "lineName": "10",
+                "direction": "Dębiec PKM"
+            },
+            {
+                "lineName": "11",
+                "direction": "Unii Lubelskiej"
+            },
+            {
+                "lineName": "12",
+                "direction": "Os. Sobieskiego"
+            },
+            {
+                "lineName": "13",
+                "direction": "Junikowo"
+            },
+            {
+                "lineName": "14",
+                "direction": "Górczyn PKM"
+            },
+            {
+                "lineName": "15",
+                "direction": "Junikowo"
+            },
+            {
+                "lineName": "15",
+                "direction": "Os. Sobieskiego"
+            },
+            {
+                "lineName": "16",
+                "direction": "Os. Sobieskiego"
+            },
+            {
+                "lineName": "18",
+                "direction": "Franowo"
+            },
+            {
+                "lineName": "18",
+                "direction": "Starołęka PKM"
+            },
+            {
+                "lineName": "18",
+                "direction": "Ogrody"
+            },
+            {
+                "lineName": "18",
+                "direction": "Głogowska/Hetmańska"
+            },
+            {
+                "lineName": "19",
+                "direction": "Połabska"
+            }
+        ]
+    }
+]

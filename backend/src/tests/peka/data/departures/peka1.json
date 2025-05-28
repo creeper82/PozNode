@@ -1,0 +1,35 @@
+{
+    "times": [
+        {
+            "lfRamp": true,
+            "line": "176",
+            "minutes": 10,
+            "ticketMachine": false,
+            "leRamp": false,
+            "airCnd": true,
+            "vehicle": "1481",
+            "bike": true,
+            "realTime": true,
+            "onStopPoint": false,
+            "charger": true,
+            "lowEntranceBus": false,
+            "lowFloorBus": false,
+            "departure": "2025-05-24T15:46:00.000Z",
+            "direction": "Os. Dębina"
+        },
+        {
+            "realTime": false,
+            "onStopPoint": false,
+            "line": "603",
+            "minutes": 30,
+            "departure": "2025-05-24T16:06:00.000Z",
+            "direction": "Łęczyca/Dworcowa"
+        }
+    ],
+    "bollard": {
+        "symbol": "AWF01",
+        "name": "AWF",
+        "tag": "AWF23",
+        "mainBollard": false
+    }
+}

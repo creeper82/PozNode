@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Bergera",
+        "symbol": "BERG01",
+        "directions": [
+            {
+                "lineName": "171",
+                "direction": "Os. Dębina"
+            }
+        ]
+    },
+    {
+        "name": "Bergera",
+        "symbol": "BERG02",
+        "directions": [
+            {
+                "lineName": "171",
+                "direction": "Os. Wichrowe Wzgórze"
+            },
+            {
+                "lineName": "171",
+                "direction": "Urząd Wojewódzki"
+            }
+        ]
+    }
+]

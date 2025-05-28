@@ -1,0 +1,61 @@
+{
+    "facts": [
+        "ZSK is a mediocre school",
+        "why do I have to do write this in JS",
+        "..."
+    ],
+    "times": [
+        {
+            "cSharpIsCool": true,
+            "optimalStepsPerDay": 10000.0,
+            "realTime": false,
+            "onStopPoint": false,
+            "line": "911",
+            "minutes": 15,
+            "departure": "2025-05-24T16:05:00.000Z",
+            "direction": "Rondo Śródka",
+            "additionalProps": {
+
+            }
+        },
+        {
+            "lfRamp": true,
+            "line": "911",
+            "busColor": "Potentially a green bus idk",
+            "minutes": 16,
+            "leRamp": false,
+            "airCnd": true,
+            "vehicle": "1868",
+            "bike": true,
+            "realTime": true,
+            "onStopPoint": false,
+            "charger": false,
+            "lowEntranceBus": false,
+            "lowFloorBus": false,
+            "departure": "2025-05-24T16:06:00.000Z",
+            "direction": "Biedrusko/Park"
+        },
+        {
+            "lfRamp": true,
+            "line": "348",
+            "minutes": 19,
+            "leRamp": false,
+            "airCnd": true,
+            "vehicle": "1891",
+            "bike": true,
+            "realTime": true,
+            "onStopPoint": false,
+            "charger": false,
+            "lowEntranceBus": false,
+            "lowFloorBus": false,
+            "departure": "2025-05-24T16:09:00.000Z",
+            "direction": "Os. Sobieskiego"
+        }
+    ],
+    "bollard": {
+        "symbol": "BIPRK02",
+        "name": "Biedrusko/Park",
+        "tag": "BIPA22",
+        "mainBollard": false
+    }
+}

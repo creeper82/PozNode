@@ -1,0 +1,169 @@
+{
+    "bollardName": "Poznań Główny",
+    "bollardSymbol": "POGL42",
+    "announcements": [],
+    "departures": [
+        {
+            "line": "17",
+            "direction": "Starołęka PKM",
+            "departure": "15:49",
+            "minutes": 1,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "430",
+                "airConditioned": false,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": true,
+                "lowFloor": false,
+                "ramp": false,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "12",
+            "direction": "Starołęka PKM",
+            "departure": "15:51",
+            "minutes": 3,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "605",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": true,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "18",
+            "direction": "Ogrody",
+            "departure": "15:54",
+            "minutes": 6,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "503",
+                "airConditioned": false,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": false,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "10",
+            "direction": "Dębiec PKM",
+            "departure": "15:59",
+            "minutes": 11,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "912",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": true,
+                "lowEntrance": true,
+                "lowFloor": false,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "5",
+            "direction": "Miłostowo",
+            "departure": "16:02",
+            "minutes": 14,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "547",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": false,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "6",
+            "direction": "Junikowo",
+            "departure": "16:05",
+            "minutes": 17,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "520",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": false,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "17",
+            "direction": "Starołęka PKM",
+            "departure": "16:09",
+            "minutes": 21,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "433",
+                "airConditioned": false,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": true,
+                "lowFloor": false,
+                "ramp": false,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "12",
+            "direction": "Starołęka PKM",
+            "departure": "16:10",
+            "minutes": 22,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "409",
+                "airConditioned": false,
+                "bike": true,
+                "chargers": false,
+                "lowEntrance": false,
+                "lowFloor": true,
+                "ramp": false,
+                "ticketMachine": false
+            }
+        },
+        {
+            "line": "18",
+            "direction": "Ogrody",
+            "departure": "16:14",
+            "minutes": 26,
+            "realTime": true,
+            "onStopPoint": false,
+            "vehicle": {
+                "id": "448",
+                "airConditioned": true,
+                "bike": true,
+                "chargers": true,
+                "lowEntrance": true,
+                "lowFloor": false,
+                "ramp": true,
+                "ticketMachine": false
+            }
+        }
+    ]
+}
