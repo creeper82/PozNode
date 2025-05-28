@@ -407,3 +407,6 @@ GET localhost:5000/stats
    "uptime": "0.2 h"
 }
 ```
+
+# Tests
+Information about tests is located in README file, in the [src/tests/](src/tests/) directory
