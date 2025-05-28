@@ -4,6 +4,11 @@ This backend uses Express and Node.JS to serve as a proxy. It accepts simple GET
 
 # Initialization
 
+```
+cd backend
+npm i
+```
+
 ## Database
 
 SQLite database must be initialized before using the project
