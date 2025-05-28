@@ -310,7 +310,7 @@ Returns all variants (forwards, backwards, optional depot exits) of line, and li
 
 #### example
 ```
-GET localhost:5000/line?name=171
+GET localhost:5000/api/line?name=171
 ```
 
 ```json
@@ -387,3 +387,18 @@ GET localhost:5000/line?name=171
 
 > [!WARNING]  
 > The stops are not guaranteed to appear in a logical order. The server sends really weird values, and the depot exit variants are sometimes mixed with the normal routes. I have no control over it, and it is impossible to decrypt, since the values are often literally wrong.
+
+# Server statistics
+
+Additionally, there is a `/stats` endpoint, at the server root, which displays the server memory usage and uptime.
+
+```
+GET localhost:5000/stats
+```
+
+```json
+{
+   "memory": "80.0 MB",
+   "uptime": "0.2 h"
+}
+```
