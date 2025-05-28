@@ -4,6 +4,8 @@ This backend uses Express and Node.JS to serve as a proxy. It accepts simple GET
 
 # Initialization
 
+## Database
+
 SQLite database must be initialized before using the project
 
 ```
@@ -11,7 +13,23 @@ npx prisma generate
 npx prisma migrate deploy
 ```
 
-Then, start the app:
+The database will be located at `backend/log.db`. The server does not read the database.
+It is only there for testing purposes, or for some special cases where logging requests is necessary.
+
+The database consists of one table storing every HTTP request to the API, and looks as follows:
+
+```mermaid
+erDiagram
+    LogEntry {
+        Int id
+        String url
+        DateTime time
+    }
+```
+
+Use a program like [DB Browser for SQLite](https://sqlitebrowser.org/) to display the log entries.
+
+## Starting the app
 
 ### Development
 
