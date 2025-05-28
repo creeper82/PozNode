@@ -57,10 +57,10 @@ The API contains several `GET` endpoints, available under `/api/` route.
 
 You may expect the following HTTP codes:
 
-`404` - resource not found
-`422` - missing query parameters
-`429` - too many requests (rate limiter just kicked in yo)
-`500` - internal or external server failure
+- `404` - resource not found
+- `422` - missing query parameters
+- `429` - too many requests (rate limiter just kicked in yo)
+- `500` - internal or external server failure
 
 ## /stops
 
