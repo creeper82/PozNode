@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { defineConfig, loadEnv } from 'vite';
 import react from "@vitejs/plugin-react-swc";
 
@@ -18,5 +20,10 @@ export default defineConfig(({ mode }) => {
       // Expose environment variables to your application code
       __APP_ENV__: JSON.stringify(env.APP_ENV),
     },
+    test: {
+      globals: true,
+      environment: 'jsdom',
+      setupFiles: 'src/tests/setupTests.ts'
+    }
   };
 });
