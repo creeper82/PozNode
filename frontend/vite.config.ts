@@ -21,8 +21,9 @@ export default defineConfig(({ mode }) => {
       __APP_ENV__: JSON.stringify(env.APP_ENV),
     },
     test: {
+      globals: true,
       environment: 'jsdom',
-      setupFiles: 'tests/setupTests.ts'
+      setupFiles: 'src/tests/setupTests.ts'
     }
   };
 });
