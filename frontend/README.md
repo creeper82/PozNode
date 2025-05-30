@@ -24,3 +24,10 @@ VITE_BACKEND_API_URL=http://127.0.0.1:5000/api/
 ```
 
 Values mentioned above are set by default.
+
+# Testing
+
+To run tests (powered by `ViTest`), type:
+```
+npm test
+```
