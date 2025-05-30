@@ -79,5 +79,5 @@ export function convertLineStopsResponse(pekaResponse: PekaGetBollardsByLineResp
 }
 
 function convertTimestamp(fullTimestamp: string): string {
-    return fullTimestamp.slice(fullTimestamp.indexOf("T") + 1, fullTimestamp.indexOf(":00"));
+    return fullTimestamp.slice(fullTimestamp.indexOf("T") + 1, fullTimestamp.lastIndexOf(":00"));
 }
