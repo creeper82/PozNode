@@ -42,7 +42,7 @@
         {
             "line": "2",
             "direction": "Ogrody",
-            "departure": "16",
+            "departure": "16:00",
             "minutes": 13,
             "realTime": true,
             "onStopPoint": false,

@@ -4,7 +4,7 @@
   "description": "proxy server that fetches Poznan live vehicles data",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest src/tests",
     "dev": "nodemon src/index.ts",
     "prod": "tsc && node dist/index.js"
   },
